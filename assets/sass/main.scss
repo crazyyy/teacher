@@ -1,0 +1,133 @@
+@import '_reset.scss';
+@import '_wordpress.scss';
+@import '_font_fontawesome.scss';
+@import '_font_opensans.scss';
+@import '_button.scss';
+$width: 80%;
+$footer: 10px;
+$footer_margin: $footer - 2 * $footer;
+$color: #444;
+$color_a: #000;
+$trs: all .5s;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+
+  color: $color;
+}
+a {
+  transition: $trs;
+
+  color: $color_a;
+  &:hover {
+    color: lighten($color_a, 10%);
+  }
+  &:active {
+    color: lighten($color_a, 20%);
+  }
+}
+
+.wrapper {
+  position: relative;
+
+  width: 100%;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+.inner {
+  position: relative;
+
+  width: $width;
+  margin: 0 auto;
+}
+
+header {
+  height: 300px;
+  .logo {
+    display: block;
+
+    width: 100px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+.backhead {
+  z-index: -50;
+
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bkblock0n {
+  position: absolute;
+  top: 0;
+
+  height: 170px;
+}
+
+
+.container {
+  width: $width;
+  padding: 0 0 $footer;
+}
+
+
+
+
+@mixin button($color) {
+  display: block;
+
+  width: 10%;
+  margin: 0 auto;
+  padding: 10px;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 5px;
+
+  background-color: $color;
+}
+
+.button-red {
+  @include button(blue);
+}
+
+.button-blue {
+  @include button(red);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  position: relative;
+
+  width: 100%;
+  height: $footer;
+  margin: $footer_margin auto 0;
+  .mainfooter {
+    width: $width;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+@import '_print.scss';

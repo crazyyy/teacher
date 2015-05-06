@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson 7</title>
+</head>
+<body>
+	<script>
+		alert('Привіт! Зараз ми будем з тобою гратися');
+		var questionOne = prompt('Місто над бугом:'),
+		 	questionTwo = prompt('Столиця України:'),
+		 	answerOne	= ('Вінниця'),
+		 	answerTwo	= ('Київ')
+		 	answers		= 0;
+
+		if (questionOne == answerOne) {
+			alert('Вірно, це Вінниця місто над бугом!');
+			answers = answers + 1;
+		}
+		else {
+			alert('Вінниця - місто над бугом!')
+		};
+
+		if (questionTwo == answerTwo) {
+			alert('Так, Київ столиця України');
+			answers = answers + 1;
+		}
+		else {
+			alert('Ні '+ questionTwo +' не столиця України')
+		};
+
+		alert('Загалом вірних відповідей '+answers);
+
+	</script>
+</body>
+</html>

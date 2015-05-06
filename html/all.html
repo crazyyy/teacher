@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>all </title>
+	<style>
+		body {
+			background-color: grey;
+			padding-top: 20px;
+			font-size: 14px;
+			font-family: Verdana, Geneva, sans-serif;
+		}
+		table {
+			background-color: #fff;
+			width: 80%;
+			min-width: 640px;
+			margin: 0 auto;
+		}
+		td {
+			padding: 5px 3px;
+			border-bottom: 1px solid black;
+		}
+		td:first-child {
+			color: blue;
+			width: 20%;
+		}
+		td:nth-child(2) {
+			width: 30%;
+			color: green;
+		}
+		tr:last-child td {
+			border-bottom: 0;
+		}
+		a {
+			font-weight: bold;
+			text-decoration: none;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				prompt
+			</td>
+			<td>
+				var n = prompt('N:');
+			</td>
+			<td>
+				діалоговое вікно запиту якихось данних
+			</td>
+		</tr>
+		<tr>
+			<td>
+				parseInt
+			</td>
+			<td>
+				var n = prompt('N:'); <br>
+				n = parseInt(n); <br>
+				years = parseInt(prompt('Скільки років'));
+			</td>
+			<td>
+				перетворю перший аргумент в число <a href="http://javascript.ru/parseInt">*</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				&&
+			</td>
+			<td>
+				if ( (a > b) && (a > c) ) ...
+			</td>
+			<td>
+				логічна операція "і"
+			</td>
+		</tr>
+		<tr>
+			<td>
+				||
+			</td>
+			<td>
+				if ( a || b || c = )
+			</td>
+			<td>
+				логічна операція "чи (или)"
+			</td>
+		</tr>
+		<tr>
+			<td>isNaN</td>
+			<td>isNan(a)</td>
+			<td>намагається перетворити аргумент в число, якщо ок то true, інакше - false <a href="http://javascript.ru/isNaN">*</a></td>
+		</tr>
+		<tr>
+			<td>arr = ['1', '2', '3', '5'];</td>
+			<td>var arr = ['1', '2', '3', '5']; <br>
+			console.log(arr); <br>
+			console.log(arr[2]);</td>
+			<td>масив. нумерація починається з 0</td>
+		</tr>
+		<tr>
+			<td>.push</td>
+			<td>arr.push('22');</td>
+			<td>додає єлемент в кінець масиву</td>
+		</tr>
+		<tr>
+			<td>.pop</td>
+			<td>arr.pop()</td>
+			<td>видаляє останній елемент з масиву і показує його</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>

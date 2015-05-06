@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+	// var n = 0;
+
+	// while (n <= 9) {
+	// 	n = n + 1;
+	// 	console.log(n);
+	// }
+
+	// do {
+	// 	alert('вгадай цифру!');
+	// } while (prompt('вгадай цифру і все скінчиться') != '2' );
+	// console.log('Бувай!')
+
+	var n = 0;
+
+	do {
+		random = Math.random();
+		console.log('random: ' + random + ' random6 ' + random * 6 );
+		if ((random * 6) < 1) {
+			console.log('усьо!');
+			break;
+		}
+
+		n++;
+	// } while (true);
+	} while (prompt('Тур ' + n + '  ||  1 граєм, інакше - стоп!') == 1);
+
+	console.log('Зіграно турів: ' + n);
+
+
+
+
+	</script>
+</body>
+</html>

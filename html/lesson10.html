@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+	// var n = 0;
+	// 
+	// do {
+	// 	console.log(n);
+	// 	n++;
+	// } while (n <= 15);
+
+	// for ( 
+	// 	var n = 0;
+	// 	n <= 22;
+	// 	n++
+	// 	) {
+	// 	console.log(n);
+	// }
+
+	// for (
+	// 	var n = 0;
+	// 	n <= 100;
+	// 	n = n + 5
+	// )
+	// {
+	// 	console.log(n);
+	// }
+
+	var deposit = parseInt(prompt('Який депозит?')),
+		interest = parseInt(prompt('Відсоткова ставка')),
+		years = parseInt(prompt('Скільки років'));
+
+	for (
+			var n = 1;
+			n <=  years;
+			n++
+		) {
+			depositPlus = (deposit / 100) * interest;
+			deposit = deposit + depositPlus;
+			console.log(deposit);
+		}
+	console.log('Через ' + years + ' на рахунку буде ' + Math.floor(deposit));
+
+
+	</script>
+</body>
+</html>

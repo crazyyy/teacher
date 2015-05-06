@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson 8</title>
+</head>
+<body>
+	<script>
+		 // var a = parseInt(prompt('A:')),
+		 // 	 b = parseInt(prompt('B:')),
+		 // 	 c = parseInt(prompt('C:'));
+
+		 // if ( isNaN(a) || isNaN(b) || isNaN(c) ) {
+		 // 	alert('Жодне з уведенного не числа');
+		 // }
+		 // else {
+		 // 	alert('Здається хоч одне з цього число');
+		 // }
+
+		 // if ( ((a > b) && (a < c)) || ((a > c) && (a < b)) ) {
+		 // 	alert('A між В та С');
+		 // }
+
+		 var 	diapOne = 20,
+		 		diapTwo = 70,
+		 		shot = prompt('Shot angle:');
+
+		 shot = parseInt(shot);
+
+		 diapOneTop = diapOne + 7,
+		 diapOneBott = diapOne - 7,
+		 diapTwoTop = diapTwo + 7,
+		 diapTwoBott = diapTwo - 7;
+
+		 if ((shot <= diapOneTop) && (shot >= diapOneBott)) {
+		 	alert('Успішно в першу ціль');
+		 }
+		 else if ((shot <= diapTwoTop) && (shot >= diapTwoBott)) {
+		 	alert('Успішно в другу ціль');
+		 }
+		 else {
+		 	alert('Мазіла!');
+		 }
+
+
+
+
+
+	</script>
+</body>
+</html>

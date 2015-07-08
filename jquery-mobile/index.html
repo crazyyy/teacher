@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name-"viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="head.min.js"></script>
+  <script>
+
+  head.load(["jquery-1.11.1.min.js", "jquery.mobile-1.4.5.min.js", "jquery.mobile-1.4.5.min.css"], function () {
+      // this will only be executed once jquery has finished loading
+      console.log('Loading ready')
+  });
+  </script>
+
+</head>
+<body>
+
+  <div id="home" data-role="page" data-theme="a">
+
+    <div data-role="header" data-position="fixed">
+      <h1>Hellow on my first HOMEPAGE!</h1>
+    </div>
+
+    <div class="ui-content" data-role="main">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vitae, placeat illo qui, impedit autem velit repellat totam sapiente, ea unde tempore nostrum ipsa itaque doloribus quod harum fugiat voluptate.</p>
+    </div>
+
+    <div data-role="footer" data-id="main-menu" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" data-transition="slide" class="ui-btn-active ui-state-persist">Home</a></li>
+          <li><a href="#quotations" data-icon="grid" data-transition="slideup">Quotations</a></li>
+          <li><a href="#about" data-icon="info" data-transition="flip">About</a></li>
+        </ul>
+      </div><!-- navbar -->
+    </div><!-- footer -->
+
+  </div><!-- #home -->
+
+  <div id="quotations" data-role="page" data-theme="a">
+
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="true" data-back-btn-theme="a">
+      <h1>Hellow on my second page!</h1>
+    </div>
+
+    <div class="ui-content" data-role="main">
+      <p>LVoluptatem maxime reprehenderit assumenda, minima. Laborum sint numquam dicta! Eum ad fugit excepturi consequatur odio id sit doloremque quam quasi eius! Beatae dolor possimus illo qui, placeat atque debitis molestias.</p>
+      <div></div>
+    </div>
+
+    <div data-role="footer" data-id="main-menu" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" data-transition="slide" class="ui-btn-active ui-state-persist">Home</a></li>
+          <li><a href="#quotations" data-icon="grid" data-transition="slideup">Quotations</a></li>
+          <li><a href="#about" data-icon="info" data-transition="flip">About</a></li>
+        </ul>
+      </div><!-- navbar -->
+    </div><!-- footer -->
+
+  </div><!-- #quotations -->
+
+  <div id="about" data-role="page" data-theme="a">
+
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="true" data-back-btn-theme="a">
+      <h1>Hellow on my second page!</h1>
+    </div>
+
+    <div class="ui-content" data-role="main">
+      <p>LVoluptatem maxime reprehenderit assumenda, minima. Laborum sint numquam dicta! Eum ad fugit excepturi consequatur odio id sit doloremque quam quasi eius! Beatae dolor possimus illo qui, placeat atque debitis molestias.</p>
+      <div></div>
+    </div>
+
+    <div data-role="footer" data-id="main-menu" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" data-transition="slide" class="ui-btn-active ui-state-persist">Home</a></li>
+          <li><a href="#quotations" data-icon="grid" data-transition="slideup">Quotations</a></li>
+          <li><a href="#about" data-icon="info" data-transition="flip">About</a></li>
+        </ul>
+      </div><!-- navbar -->
+    </div><!-- footer -->
+
+  </div><!-- #about -->
+
+</body>
+</html>

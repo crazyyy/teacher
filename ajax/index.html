@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ajax</title>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+  <script>
+    $(document).ready ( function () {
+      $.ajax ({
+        type: 'POST',
+        url: '/ajax/ajax.php',
+        dataType: 'json',
+        success: function(data) {
+          $('.input-name').val(data.id);
+          $('.text').text(data.content);
+        }
+      })
+    })
+  </script>
+
+  <input type="text" class="input-name" value=''>
+  <p class="text"></p>
+
+</body>
+</html>

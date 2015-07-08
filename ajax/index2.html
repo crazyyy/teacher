@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ajax</title>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+  <script>
+
+    function runAjax () {
+      var inputFirst = $('.input-name').val(),
+        inputSecond =$('.input-second');
+      $.ajax({
+        type: 'POST',
+        data: 'key=' + inputFirst,
+        url: '/ajax/ajax-2.php',
+        dataType: 'json',
+        success: function(data) {
+          $(inputSecond).val(data.id);
+          var temp = data.content + " " + data.key;
+          $('.text').text(temp);
+        }
+      })
+    }
+
+    $(document).ready ( function () {
+      $('button').click(runAjax);
+    })
+
+  </script>
+
+  <input type="text" class="input-name" value=''><br>
+  <button>X</button><br>
+  <input type="text" class="input-second"><br>
+  <p class="text"></p>
+
+</body>
+</html>

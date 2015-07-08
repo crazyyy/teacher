@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="" class="col-md-6">
+    <h3>new user</h3>
+
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" data-bind="value:firstName">
+      </div>
+    </div><!-- firstName -->
+
+    <div class="form-group">
+      <label for="last-name" class="col-sm-2 control-label">Last Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="last-name" data-bind="value:lastName">
+      </div>
+    </div><!-- lastName -->
+
+    <div class="form-group">
+      <label for="age" class="col-sm-2 control-label">Age:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="age" data-bind="value:age">
+        <div class="col-sm-6 n-pad_r">
+          <label for="sex" class="col-sm-4 control-label label-mini">Sex:</label>
+          <div class="col-sm-8 n-pad_r">
+            <select id="sex" class="form-control"></select>
+          </div>
+        </div>
+      </div>
+    </div><!-- age -->
+
+    <label class="pad_add">Access to admin: <input type="checkbox"></label>
+    <div class="form-group pad_add">
+      <label>Web Admin <input type="radio" name="optionsRadios" value="Web Admin"></label><br>
+      <label>Cluster Admin <input type="radio" name="optionsRadios" value="Cluster Admin"></label><br>
+      <label>Root Admin <input type="radio" name="optionsRadios" value="Root Admin"></label><br>
+    </div>
+    <div class="form-group pad_add">
+      <button class="btn btn-default" type="submit">Save</button>
+    </div>
+
+  </form>
+
+  <div class="col-md-6">
+    <h3>New User:</h3>
+    <ul>
+      <li>Vitaly Antonyuk</li>
+      <li>30 years</li>
+      <li>Men</li>
+      <li>Admin (<span></span>)</li>
+    </ul>
+    <button class="btn btn-default" type="button">clear</button>
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/knockoutjs/dist/knockout.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    function getRandomInt (min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min )
+    }
+
+    function getCard () {
+      var cards = ['6', '7', '8', '9', '10', 'J', 'Q', 'K','A'];
+      return cards[getRandomInt(0, cards.length - 1)];
+    }
+
+    var dealer = [getCard()],
+      player = [getCard(), getCard()];
+
+    console.log('Dealer: ' + dealer.join(' '));
+    console.log('Player: ' + player.join(' '));
+
+    /* ------------------------------ */
+
+    function getSum(hand) {
+      var sum = 0;
+
+      for( var i=0; i < hand.length; i++ ) {
+        var card = hand[i];
+        if ( card != 'A') {
+          if (card =='J' || card == 'Q' || card == 'K') {
+            sum = sum + 10;
+          } else {
+            sum = sum + parseInt(card);
+          }
+        }
+      }
+
+      for ( var i = 0; i < hand.length; i++) {
+        var card = hand[i];
+        if ( card == 'A' ) {
+          if ( sum > 10 ) {
+            sum = sum + 1
+          } else {
+            sum = sum + 11;
+          }
+        }
+      }
+
+      return sum;
+
+    }
+
+
+    console.log('Dealer: ' + getSum(dealer));
+    console.log('Player: ' + getSum(player));
+
+  </script>
+
+</body>
+</html>

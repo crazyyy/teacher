@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:valueAllowUnset="http://www.w3.org/1999/xhtml" xmlns:value="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <form action="" class="col-md-6">
+  <form action="" class="col-md-6" data-bind="submit:save">
     <h3>new user</h3>
 
     <div class="form-group">
@@ -32,17 +32,21 @@
         <div class="col-sm-6 n-pad_r">
           <label for="sex" class="col-sm-4 control-label label-mini">Sex:</label>
           <div class="col-sm-8 n-pad_r">
-            <select id="sex" class="form-control"></select>
+            <select id="sex" class="form-control" data-bind="options: sexOptions,
+                                                              optionsCaption: 'Not Selected',
+                                                              value: sex,
+                                                              valueAllowUnset: true">
+            </select>
           </div>
         </div>
       </div>
     </div><!-- age -->
 
-    <label class="pad_add">Access to admin: <input type="checkbox"></label>
-    <div class="form-group pad_add">
-      <label>Web Admin <input type="radio" name="optionsRadios" value="Web Admin"></label><br>
-      <label>Cluster Admin <input type="radio" name="optionsRadios" value="Cluster Admin"></label><br>
-      <label>Root Admin <input type="radio" name="optionsRadios" value="Root Admin"></label><br>
+    <label class="pad_add">Access to admin: <input type="checkbox" data-bind="checked:isAdmin"></label>
+    <div class="form-group pad_add" data-bind="visible:isAdmin">
+      <label>Web Admin <input type="radio" name="optionsRadios" value="Web Admin" data-bind="checked:adminName"></label><br>
+      <label>Cluster Admin <input type="radio" name="optionsRadios" value="Cluster Admin" data-bind="checked:adminName"></label><br>
+      <label>Root Admin <input type="radio" name="optionsRadios" value="Root Admin" data-bind="checked:adminName"></label><br>
     </div>
     <div class="form-group pad_add">
       <button class="btn btn-default" type="submit">Save</button>
@@ -53,12 +57,12 @@
   <div class="col-md-6">
     <h3>New User:</h3>
     <ul>
-      <li>Vitaly Antonyuk</li>
-      <li>30 years</li>
-      <li>Men</li>
-      <li>Admin (<span></span>)</li>
+      <li data-bind="text:fullName">Vitaly Antonyuk</li>
+      <li data-bind="text:age">30 years</li>
+      <li data-bind="text:sex">Men</li>
+      <li data-bind="visible:isAdmin">Admin (<span data-bind="text:adminName"></span>)</li>
     </ul>
-    <button class="btn btn-default" type="button">clear</button>
+    <button class="btn btn-default" type="button" data-bind="visible:notEmpty, click: reset">clear</button>
   </div>
 
 

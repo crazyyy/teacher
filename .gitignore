@@ -8,6 +8,7 @@
 /.hgignore
 _gsdata_
 node_modules
+angular
 npm-debug.log
 sftp-config.json
 sxd

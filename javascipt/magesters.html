@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <p id="paragtaph" onclick="bigger()">Paragraph!</p>
+
+  <script>
+    document.getElementById('paragtaph').innerHTML = 'Hello, World!';
+    document.getElementById('paragtaph').style.fontSize = '16px';
+    var i = 16;
+
+    function bigger () {
+      console.log(i);
+      if ( i !== 16 ) {
+        console.log('first: ' + i);
+        document.getElementById('paragtaph').style.fontSize = 2 + i + 'px';
+        i = i + 2;
+      } else {
+        console.log('second: ' + i);
+        document.getElementById('paragtaph').style.fontSize = 2 + i + 'px';
+      };
+
+    }
+  </script>
+
+</body>
+</html>

@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/1.0-alpha-1000\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Network Admin\n"
 
 #: wp-admin/network.php:545
@@ -23,13 +23,13 @@ msgstr "Добавьте следующие строки в файл %1$s в к�
 msgid "To make your installation more secure, you should also add:"
 msgstr "Чтобы повысить безопасность вашей сети, стоит также добавить:"
 
-#: wp-admin/network.php:427
-msgid "This unique authentication key is also missing from your <code>wp-config.php</code> file."
-msgstr "Следующий уникальный ключ аутентификации также отсутствует в вашем файле <code>wp-config.php</code>."
-
 #: wp-admin/network.php:429
 msgid "These unique authentication keys are also missing from your <code>wp-config.php</code> file."
 msgstr "Следующие уникальные ключи аутентификации также отсутствуют в вашем файле <code>wp-config.php</code>."
+
+#: wp-admin/network.php:427
+msgid "This unique authentication key is also missing from your <code>wp-config.php</code> file."
+msgstr "Следующий уникальный ключ аутентификации также отсутствует в вашем файле <code>wp-config.php</code>."
 
 #: wp-admin/network.php:393
 msgid "Add the following to your <code>wp-config.php</code> file in <code>%s</code> <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
@@ -214,13 +214,13 @@ msgstr "При создании сети константу DO_NOT_UPGRADE_GLOBA
 msgid "Network"
 msgstr "Сеть"
 
-#: wp-admin/network.php:123 wp-admin/network.php:134
-msgid "<a href=\"https://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Создание_сети\" target=\"_blank\">Документация по созданию сети</a>"
-
 #: wp-admin/network.php:124 wp-admin/network.php:135
 msgid "<a href=\"https://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Документация по экрану &laquo;Сеть&raquo;</a>"
+
+#: wp-admin/network.php:123 wp-admin/network.php:134
+msgid "<a href=\"https://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Создание_сети\" target=\"_blank\">Документация по созданию сети</a>"
 
 #: wp-admin/network.php:121
 msgid "The choice of subdirectory sites is disabled if this setup is more than a month old because of permalink problems with &#8220;/blog/&#8221; from the main site. This disabling will be addressed in a future version."
@@ -298,25 +298,25 @@ msgstr "В этой таблице показаны все пользовате�
 msgid "Warning! User cannot be modified. The user %s is a network administrator."
 msgstr "Внимание! Невозможно изменить пользователя. Пользователь %s &#8212; администратор сети."
 
-#: wp-admin/network/users.php:111
-msgid "Once you hit &#8220;Confirm Deletion&#8221;, the user will be permanently removed."
-msgstr "Как только вы нажмёте &laquo;Подтвердить удаление&raquo;, пользователь будет удалён навсегда."
-
 #: wp-admin/network/users.php:113
 msgid "Once you hit &#8220;Confirm Deletion&#8221;, these users will be permanently removed."
 msgstr "Как только вы нажмёте &laquo;Подтвердить удаление&raquo;, эти пользователи будут удалены навсегда."
+
+#: wp-admin/network/users.php:111
+msgid "Once you hit &#8220;Confirm Deletion&#8221;, the user will be permanently removed."
+msgstr "Как только вы нажмёте &laquo;Подтвердить удаление&raquo;, пользователь будет удалён навсегда."
 
 #: wp-admin/network/users.php:97
 msgid "User has no sites or content and will be deleted."
 msgstr "У пользователя нет ни сайтов ни записей, он будет удалён."
 
-#: wp-admin/network/users.php:70
-msgid "Select a user"
-msgstr "Выберите пользователя"
-
 #: wp-admin/network/users.php:85
 msgid "Site: %s"
 msgstr "Сайт: %s"
+
+#: wp-admin/network/users.php:70
+msgid "Select a user"
+msgstr "Выберите пользователя"
 
 #. translators: user login
 #: wp-admin/network/users.php:62
@@ -327,29 +327,29 @@ msgstr "Что нужно сделать с записями пользоват�
 msgid "Warning! User cannot be deleted. The user %s is a network administrator."
 msgstr "Внимание! Невозможно удалить пользователя. Пользователь %s &#8212; администратор сети."
 
-#: wp-admin/network/users.php:28
-msgid "You have chosen to delete the user from all networks and sites."
-msgstr "Вы собираетесь удалить пользователя из всех сетей и со всех сайтов."
+#: wp-admin/network/users.php:45
+msgid "Warning! User %s cannot be deleted."
+msgstr "Внимание! Невозможно удалить пользователя %s."
 
 #: wp-admin/network/users.php:30
 msgid "You have chosen to delete the following users from all networks and sites."
 msgstr "Вы собираетесь удалить следующих пользователей из всех сетей и со всех сайтов."
 
-#: wp-admin/network/users.php:45
-msgid "Warning! User %s cannot be deleted."
-msgstr "Внимание! Невозможно удалить пользователя %s."
+#: wp-admin/network/users.php:28
+msgid "You have chosen to delete the user from all networks and sites."
+msgstr "Вы собираетесь удалить пользователя из всех сетей и со всех сайтов."
 
 #: wp-admin/network/user-new.php:52
 msgid "Cannot add user."
 msgstr "Не удалось добавить пользователя."
 
-#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:275
-msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Документация по пользователям сети</a>"
-
 #: wp-admin/network/user-new.php:40
 msgid "Cannot create an empty user."
 msgstr "Невозможно создать пустого пользователя."
+
+#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:275
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Документация по пользователям сети</a>"
 
 #: wp-admin/network/user-new.php:24
 msgid "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
@@ -408,16 +408,16 @@ msgstr "Если ядро WordPress не обновлялось, нажатие 
 msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
 msgstr "Используйте этот экран только после обновления до новой версии WordPress со страницы &laquo;Обновления > Все обновления&raquo; (через меню раздела &laquo;Администрирование сети&raquo; или через верхнюю панель). При нажатии на кнопку &laquo;Обновить сеть&raquo; для каждого сайта сети (по пять за один раз) будет запущена процедура обновления базы данных."
 
+#: wp-admin/network/themes.php:297
+msgid "You cannot delete a theme while it is active on the main site."
+msgstr "Нельзя удалить тему, пока она активна на основном сайте."
+
 #: wp-admin/network/themes.php:291
 msgid "%s theme deleted."
 msgid_plural "%s themes deleted."
 msgstr[0] "%s тема удалена."
 msgstr[1] "%s темы удалены."
 msgstr[2] "%s тем удалены."
-
-#: wp-admin/network/themes.php:297
-msgid "You cannot delete a theme while it is active on the main site."
-msgstr "Нельзя удалить тему, пока она активна на основном сайте."
 
 #: wp-admin/network/themes.php:250
 msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes</a>"
@@ -435,13 +435,13 @@ msgstr "Если администратор сети отключит тему, 
 msgid "This screen enables and disables the inclusion of themes available to choose in the Appearance menu for each site. It does not activate or deactivate which theme a site is currently using."
 msgstr "На этом экране можно разрешить или запретить использование определённых тем в меню &laquo;Внешний вид&raquo; каждого сайта. Активация и деактивация используемой сайтом темы происходит не здесь."
 
-#: wp-admin/network/themes.php:187
-msgid "Yes, Delete these themes"
-msgstr "Да, удалить эти темы"
-
 #: wp-admin/network/themes.php:195
 msgid "No, Return me to the theme list"
 msgstr "Нет, вернуться к списку тем"
+
+#: wp-admin/network/themes.php:187
+msgid "Yes, Delete these themes"
+msgstr "Да, удалить эти темы"
 
 #: wp-admin/network/themes.php:185
 msgid "Yes, Delete this theme"
@@ -451,13 +451,13 @@ msgstr "Да, удалить эту тему"
 msgid "Are you sure you wish to delete these themes?"
 msgstr "Вы уверены, что хотите удалить эти темы?"
 
-#: wp-admin/network/themes.php:159
-msgid "You are about to remove the following themes:"
-msgstr "Вы собираетесь удалить следующие темы:"
-
 #: wp-admin/network/themes.php:170
 msgid "Are you sure you wish to delete this theme?"
 msgstr "Вы уверены, что хотите удалить эту тему?"
+
+#: wp-admin/network/themes.php:159
+msgid "You are about to remove the following themes:"
+msgstr "Вы собираетесь удалить следующие темы:"
 
 #: wp-admin/network/themes.php:158
 msgid "These themes may be active on other sites in the network."
@@ -467,13 +467,13 @@ msgstr "Эти темы могут быть активными на других
 msgid "Delete Themes"
 msgstr "Удалить темы"
 
-#: wp-admin/network/themes.php:154
-msgid "This theme may be active on other sites in the network."
-msgstr "Эта тема может быть активной на других сайтах сети."
-
 #: wp-admin/network/themes.php:155
 msgid "You are about to remove the following theme:"
 msgstr "Вы собираетесь удалить следующую тему:"
+
+#: wp-admin/network/themes.php:154
+msgid "This theme may be active on other sites in the network."
+msgstr "Эта тема может быть активной на других сайтах сети."
 
 #: wp-admin/network/themes.php:153
 msgid "Delete Theme"
@@ -627,6 +627,10 @@ msgstr "Пользователь уже является участником э
 msgid "Network enabled themes are not shown on this screen."
 msgstr "Темы, активированные для сети, на этом экране не показаны."
 
+#: wp-admin/network/site-themes.php:175 wp-admin/network/themes.php:295
+msgid "No theme selected."
+msgstr "Тема не выбрана."
+
 #: wp-admin/network/site-themes.php:171 wp-admin/network/themes.php:283
 msgid "%s theme disabled."
 msgid_plural "%s themes disabled."
@@ -634,9 +638,9 @@ msgstr[0] "%s тема запрещена."
 msgstr[1] "%s темы запрещены."
 msgstr[2] "%s тем запрещены."
 
-#: wp-admin/network/site-themes.php:175 wp-admin/network/themes.php:295
-msgid "No theme selected."
-msgstr "Тема не выбрана."
+#: wp-admin/network/site-themes.php:169 wp-admin/network/themes.php:281
+msgid "Theme disabled."
+msgstr "Тема запрещена."
 
 #: wp-admin/network/site-themes.php:163 wp-admin/network/themes.php:275
 msgid "%s theme enabled."
@@ -644,10 +648,6 @@ msgid_plural "%s themes enabled."
 msgstr[0] "%s тема разрешена."
 msgstr[1] "%s темы разрешены."
 msgstr[2] "%s тем разрешены."
-
-#: wp-admin/network/site-themes.php:169 wp-admin/network/themes.php:281
-msgid "Theme disabled."
-msgstr "Тема запрещена."
 
 #: wp-admin/network/site-themes.php:161 wp-admin/network/themes.php:273
 msgid "Theme enabled."
@@ -820,26 +820,26 @@ msgstr "Разрешить служебные меню"
 msgid "Default Language"
 msgstr "Язык по умолчанию"
 
-#: wp-admin/network/settings.php:319
-msgid "Size in kilobytes"
-msgstr "Размер в килобайтах"
-
 #: wp-admin/network/settings.php:330
 msgid "Language Settings"
 msgstr "Языковые настройки"
+
+#: wp-admin/network/settings.php:319
+msgid "Size in kilobytes"
+msgstr "Размер в килобайтах"
 
 #: wp-admin/network/settings.php:317
 msgctxt "File size in kilobytes"
 msgid "%s KB"
 msgstr "%s КБ"
 
-#: wp-admin/network/settings.php:309
-msgid "Allowed file types. Separate types by spaces."
-msgstr "Разрешённые типы файлов. Разделяются пробелами."
-
 #: wp-admin/network/settings.php:315
 msgid "Max upload file size"
 msgstr "Максимальный размер"
+
+#: wp-admin/network/settings.php:309
+msgid "Allowed file types. Separate types by spaces."
+msgstr "Разрешённые типы файлов. Разделяются пробелами."
 
 #: wp-admin/network/settings.php:305
 msgid "Upload file types"
@@ -969,13 +969,13 @@ msgstr "Авторизованные пользователи могут соз�
 msgid "User accounts may be registered."
 msgstr "Можно создавать учётные записи."
 
-#: wp-admin/network/settings.php:155
-msgid "New registrations settings"
-msgstr "Настройки регистрации"
-
 #: wp-admin/network/settings.php:156
 msgid "Registration is disabled."
 msgstr "Регистрация отключена."
+
+#: wp-admin/network/settings.php:155
+msgid "New registrations settings"
+msgstr "Настройки регистрации"
 
 #: wp-admin/network/settings.php:147
 msgid "Allow new registrations"
@@ -1001,13 +1001,13 @@ msgstr "Название сети"
 msgid "Operational Settings"
 msgstr "Оперативные настройки"
 
-#: wp-admin/network/settings.php:64
-msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Документация по параметрам сети</a>"
-
 #: wp-admin/network/settings.php:117
 msgid "Options saved."
 msgstr "Настройки сохранены."
+
+#: wp-admin/network/settings.php:64
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Документация по параметрам сети</a>"
 
 #: wp-admin/network/settings.php:59
 msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
@@ -1076,10 +1076,6 @@ msgstr "Добавить новый"
 msgid "All Sites"
 msgstr "Все сайты"
 
-#: wp-admin/network/index.php:53
-msgid "<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">Документация по управлению сетью</a>"
-
 #: wp-admin/network/index.php:54 wp-admin/network/site-info.php:33
 #: wp-admin/network/site-new.php:30 wp-admin/network/site-settings.php:33
 #: wp-admin/network/site-themes.php:33 wp-admin/network/site-users.php:36
@@ -1087,6 +1083,10 @@ msgstr "<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">
 #: wp-admin/network/users.php:276
 msgid "<a href=\"https://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"https://ru.forums.wordpress.org/forum/multisite\" target=\"_blank\">Форумы поддержки</a>"
+
+#: wp-admin/network/index.php:53
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">Документация по управлению сетью</a>"
 
 #: wp-admin/network/index.php:47
 msgid "Quick Tasks"

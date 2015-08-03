@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-07-23 15:41:00+0000\n"
+"PO-Revision-Date: 2015-07-26 00:43:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/1.0-alpha-1000\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Administration\n"
 
 #. Author URI of the plugin/theme
@@ -223,13 +223,13 @@ msgstr "Подтвердите удаление"
 msgid "Attribute all content to:"
 msgstr "Связать всё содержимое:"
 
-#: wp-admin/users.php:248
-msgid "What should be done with content owned by these users?"
-msgstr "Что нужно сделать с записями этих пользователей?"
-
 #: wp-admin/users.php:252
 msgid "Delete all content."
 msgstr "Удалить всё содержимое"
+
+#: wp-admin/users.php:248
+msgid "What should be done with content owned by these users?"
+msgstr "Что нужно сделать с записями этих пользователей?"
 
 #: wp-admin/users.php:246
 msgid "What should be done with content owned by this user?"
@@ -243,13 +243,13 @@ msgstr "ID #%1$s: %2$s"
 msgid "ID #%1$s: %2$s <strong>The current user will not be deleted.</strong>"
 msgstr "ID #%1$s: %2$s <strong>Текущий пользователь не будет удалён.</strong>"
 
-#: wp-admin/users.php:225
-msgid "You have specified this user for deletion:"
-msgstr "Вы указали следующего пользователя для удаления:"
-
 #: wp-admin/users.php:227
 msgid "You have specified these users for deletion:"
 msgstr "Вы указали следующих пользователей для удаления:"
+
+#: wp-admin/users.php:225
+msgid "You have specified this user for deletion:"
+msgstr "Вы указали следующего пользователя для удаления:"
 
 #: wp-admin/users.php:220
 msgid "Please select an option."
@@ -521,13 +521,13 @@ msgstr "Дополнительные возможности"
 msgid "Log %s out of all sessions"
 msgstr "Завершить все сессии пользователя %s"
 
-#: wp-admin/user-edit.php:493
-msgid "Left your account logged in at a public computer? Lost your phone? This will log you out everywhere except your current browser."
-msgstr "Оставили учётную запись авторизованной на публичном компьютере? Потеряли телефон? Здесь можно выйти из всех сессий, кроме текущей."
-
 #: wp-admin/user-edit.php:501
 msgid "Log Out of All Sessions"
 msgstr "Завершить все сессии"
+
+#: wp-admin/user-edit.php:493
+msgid "Left your account logged in at a public computer? Lost your phone? This will log you out everywhere except your current browser."
+msgstr "Оставили учётную запись авторизованной на публичном компьютере? Потеряли телефон? Здесь можно выйти из всех сессий, кроме текущей."
 
 #: wp-admin/user-edit.php:483
 msgid "You are only logged in at this location."
@@ -715,6 +715,10 @@ msgstr "Медиафайл перемещён в корзину."
 msgid "Error saving media attachment."
 msgstr "Ошибка при сохранении медиафайла."
 
+#: wp-admin/upload.php:268
+msgid "Media permanently deleted."
+msgstr "Медиафайл удалён навсегда."
+
 #: wp-admin/upload.php:261
 msgid "%d media attachment restored from the trash."
 msgid_plural "%d media attachments restored from the trash."
@@ -722,9 +726,9 @@ msgstr[0] "%d медиафайл восстановлен из корзины."
 msgstr[1] "%d медиафайла восстановлены из корзины."
 msgstr[2] "%d медиафайлов восстановлены из корзины."
 
-#: wp-admin/upload.php:268
-msgid "Media permanently deleted."
-msgstr "Медиафайл удалён навсегда."
+#: wp-admin/upload.php:259
+msgid "Media attachment restored from the trash."
+msgstr "Медиафайл восстановлен из корзины."
 
 #: wp-admin/upload.php:250
 msgid "%d media attachment moved to the trash."
@@ -733,17 +737,9 @@ msgstr[0] "%d медиафайл перемещён в корзину."
 msgstr[1] "%d медиафайла перемещены в корзину."
 msgstr[2] "%d медиафайлов перемещены в корзину."
 
-#: wp-admin/upload.php:259
-msgid "Media attachment restored from the trash."
-msgstr "Медиафайл восстановлен из корзины."
-
 #: wp-admin/upload.php:248
 msgid "Media attachment moved to the trash."
 msgstr "Медиафайл перемещён в корзину."
-
-#: wp-admin/upload.php:238
-msgid "Media attachment permanently deleted."
-msgstr "Медиафайл удалён навсегда."
 
 #: wp-admin/upload.php:240
 msgid "%d media attachment permanently deleted."
@@ -751,6 +747,10 @@ msgid_plural "%d media attachments permanently deleted."
 msgstr[0] "%d медиафайл удалён навсегда."
 msgstr[1] "%d медиафайла удалены навсегда."
 msgstr[2] "%d медиафайлов удалены навсегда."
+
+#: wp-admin/upload.php:238
+msgid "Media attachment permanently deleted."
+msgstr "Медиафайл удалён навсегда."
 
 #: wp-admin/upload.php:232
 msgid "Detached %d attachment."
@@ -818,13 +818,13 @@ msgstr "<a href=\"https://codex.wordpress.org/Media_Library_Screen\" target=\"_b
 msgid "You can also delete individual items and access the extended edit screen from the details dialog."
 msgstr "В окне параметров также можно удалить отдельный элемент или перейти к расширенному редактированию."
 
-#: wp-admin/upload.php:57
-msgid "Clicking an item will display an Attachment Details dialog, which allows you to preview media and make quick edits. Any changes you make to the attachment details will be automatically saved."
-msgstr "При нажатии на элемент откроется окно &laquo;Параметры файла&raquo; в котором можно просмотреть файл и сделать небольшие правки. Все изменения будут автоматически сохранены."
-
 #: wp-admin/upload.php:58
 msgid "Use the arrow buttons at the top of the dialog, or the left and right arrow keys on your keyboard, to navigate between media items quickly."
 msgstr "Используйте стрелки в верхней части окна или клавиши влево/вправо, чтобы быстро перемещаться между файлами."
+
+#: wp-admin/upload.php:57
+msgid "Clicking an item will display an Attachment Details dialog, which allows you to preview media and make quick edits. Any changes you make to the attachment details will be automatically saved."
+msgstr "При нажатии на элемент откроется окно &laquo;Параметры файла&raquo; в котором можно просмотреть файл и сделать небольшие правки. Все изменения будут автоматически сохранены."
 
 #: wp-admin/upload.php:50
 msgid "To delete media items, click the Bulk Select button at the top of the screen. Select any items you wish to delete, then click the Delete Selected button. Clicking the Cancel Selection button takes you back to viewing your media."
@@ -975,13 +975,13 @@ msgstr "На этом экране можно установить свежую 
 msgid "WordPress Updates"
 msgstr "Обновления WordPress"
 
-#: wp-admin/update-core.php:355
-msgid "New translations are available."
-msgstr "Доступны новые переводы."
-
 #: wp-admin/update-core.php:392
 msgid "Update WordPress"
 msgstr "Обновить WordPress"
+
+#: wp-admin/update-core.php:355
+msgid "New translations are available."
+msgstr "Доступны новые переводы."
 
 #: wp-admin/update-core.php:346
 msgid "Your translations are all up to date."
@@ -1052,13 +1052,13 @@ msgstr "На этом сайте все будущие бета-версии у�
 msgid "BETA TESTERS:"
 msgstr "БЕТА-ТЕСТЕРАМ:"
 
-#: wp-admin/update-core.php:166
-msgid "<strong>Important:</strong> before updating, please <a href=\"https://codex.wordpress.org/WordPress_Backups\">back up your database and files</a>. For help with updates, visit the <a href=\"https://codex.wordpress.org/Updating_WordPress\">Updating WordPress</a> Codex page."
-msgstr "<strong>Важно:</strong> перед обновлением <a href=\"https://codex.wordpress.org/WordPress_Backups\">сделайте резервную копию базы данных и файлов</a>. Подробности о процедуре обновления можно найти на странице <a href=\"https://codex.wordpress.org/Обновление_WordPress\">&laquo;Обновление WordPress&raquo;</a>."
-
 #: wp-admin/update-core.php:170
 msgid "An updated version of WordPress is available."
 msgstr "Свежая версия WordPress доступна для обновления."
+
+#: wp-admin/update-core.php:166
+msgid "<strong>Important:</strong> before updating, please <a href=\"https://codex.wordpress.org/WordPress_Backups\">back up your database and files</a>. For help with updates, visit the <a href=\"https://codex.wordpress.org/Updating_WordPress\">Updating WordPress</a> Codex page."
+msgstr "<strong>Важно:</strong> перед обновлением <a href=\"https://codex.wordpress.org/WordPress_Backups\">сделайте резервную копию базы данных и файлов</a>. Подробности о процедуре обновления можно найти на странице <a href=\"https://codex.wordpress.org/Обновление_WordPress\">&laquo;Обновление WordPress&raquo;</a>."
 
 #: wp-admin/update-core.php:161
 msgid "Future security updates will be applied automatically."
@@ -1092,21 +1092,21 @@ msgstr "Вернуть это обновление"
 msgid "Hide this update"
 msgstr "Скрыть это обновление"
 
-#: wp-admin/update-core.php:67
-msgid "You can update to <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %2$s</a> automatically or download the package and install it manually:"
-msgstr "Можно обновиться до <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %2$s</a> автоматически, либо скачать архив и установить его вручную:"
-
 #: wp-admin/update-core.php:71
 msgid "Download %s"
 msgstr "Скачать %s"
 
-#: wp-admin/update-core.php:63 wp-admin/upgrade.php:76
-msgid "You cannot update because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
-msgstr "Не удаётся продолжить обновление, так как <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> требует PHP версии %2$s или выше. У вас версия %3$s."
+#: wp-admin/update-core.php:67
+msgid "You can update to <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %2$s</a> automatically or download the package and install it manually:"
+msgstr "Можно обновиться до <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %2$s</a> автоматически, либо скачать архив и установить его вручную:"
 
 #: wp-admin/update-core.php:65 wp-admin/upgrade.php:78
 msgid "You cannot update because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "Не удаётся продолжить обновление, так как <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress</a> %1$s требует MySQL версии %2$s или выше. У вас версия %3$s."
+
+#: wp-admin/update-core.php:63 wp-admin/upgrade.php:76
+msgid "You cannot update because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
+msgstr "Не удаётся продолжить обновление, так как <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> требует PHP версии %2$s или выше. У вас версия %3$s."
 
 #: wp-admin/update-core.php:61 wp-admin/upgrade.php:74
 msgid "You cannot update because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
@@ -1142,25 +1142,25 @@ msgstr "Если вы хотите преобразовать рубрики в 
 msgid "Open Press This"
 msgstr "Открыть закладку"
 
-#: wp-admin/tools.php:67
-msgid "Direct link (best for mobile)"
-msgstr "Прямая ссылка (для мобильных устройств)"
-
 #: wp-admin/tools.php:68
 msgid "Follow the link to open Press This. Then add it to your device&#8217;s bookmarks or home screen."
 msgstr "Перейдите по ссылке, чтобы открыть закладку. Затем добавьте её в избранное или на экран вашего устройства."
 
-#: wp-admin/tools.php:47
-msgid "Bookmarklet"
-msgstr "Закладка в браузере"
+#: wp-admin/tools.php:67
+msgid "Direct link (best for mobile)"
+msgstr "Прямая ссылка (для мобильных устройств)"
+
+#: wp-admin/tools.php:60
+msgid "If you can&#8217;t drag the bookmarklet to your bookmarks, copy the following code and create a new bookmark. Paste the code into the new bookmark&#8217;s URL field."
+msgstr "Если перетащить закладку в избранное не удаётся, скопируйте следующий код и создайте новую закладку. Вставьте код в её поле для адреса."
 
 #: wp-admin/tools.php:54
 msgid "Copy &#8220;Press This&#8221; bookmarklet code"
 msgstr "Скопировать код закладки &laquo;Опубликовать&raquo;"
 
-#: wp-admin/tools.php:60
-msgid "If you can&#8217;t drag the bookmarklet to your bookmarks, copy the following code and create a new bookmark. Paste the code into the new bookmark&#8217;s URL field."
-msgstr "Если перетащить закладку в избранное не удаётся, скопируйте следующий код и создайте новую закладку. Вставьте код в её поле для адреса."
+#: wp-admin/tools.php:47
+msgid "Bookmarklet"
+msgstr "Закладка в браузере"
 
 #: wp-admin/tools.php:46
 msgid "Install Press This"
@@ -1207,13 +1207,13 @@ msgstr "Повреждённые темы"
 msgid "Update Available"
 msgstr "Доступно обновление"
 
-#: wp-admin/themes.php:145
-msgid "You cannot delete a theme while it has an active child theme."
-msgstr "Нельзя удалить тему, пока её дочерняя тема активна."
-
 #: wp-admin/themes.php:152
 msgid "ERROR: %s"
 msgstr "ОШИБКА: %s"
+
+#: wp-admin/themes.php:145
+msgid "You cannot delete a theme while it has an active child theme."
+msgstr "Нельзя удалить тему, пока её дочерняя тема активна."
 
 #: wp-admin/themes.php:143
 msgid "Theme deleted."
@@ -1274,13 +1274,13 @@ msgstr "Добавление тем"
 msgid "If you would like to see more themes to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional themes from the <a href=\"%s\" target=\"_blank\">WordPress.org Theme Directory</a>. Themes in the WordPress.org Theme Directory are designed and developed by third parties, and are compatible with the license WordPress uses. Oh, and they&#8217;re free!"
 msgstr "Если вы хотели бы расширить выбор тем, нажмите на кнопку &laquo;Добавить новую&raquo;, и вы сможете посмотреть или найти дополнительные темы в <a href=\"%s\" target=\"_blank\">каталоге тем на WordPress.org</a>. Темы в каталоге WordPress.org создаются третьими лицами и совместимы с лицензией WordPress. Да, и они бесплатны!"
 
-#: wp-admin/themes.php:51
-msgid "The search for installed themes will search for terms in their name, description, author, or tag."
-msgstr "Поиск по установленным темам ищет ключевые слова в их названии, описании, имени автора и метках."
-
 #: wp-admin/themes.php:63
 msgid "Installing themes on Multisite can only be done from the Network Admin section."
 msgstr "В режиме сети установка тем возможна только в разделе &laquo;Управление сетью&raquo;."
+
+#: wp-admin/themes.php:51
+msgid "The search for installed themes will search for terms in their name, description, author, or tag."
+msgstr "Поиск по установленным темам ищет ключевые слова в их названии, описании, имени автора и метках."
 
 #: wp-admin/themes.php:50
 msgid "The current theme is displayed highlighted as the first theme."
@@ -1368,30 +1368,30 @@ msgstr "Как только вы получили список тем, любу�
 msgid "You can Upload a theme manually if you have already downloaded its ZIP archive onto your computer (make sure it is from a trusted and original source). You can also do it the old-fashioned way and copy a downloaded theme&#8217;s folder via FTP into your <code>/wp-content/themes</code> directory."
 msgstr "Можно загрузить тему вручную, если вы уже скачали ZIP-архив на свой компьютер (убедитесь, что её источник заслуживает доверия). Также можно выбрать старомодный способ и скопировать каталог скачанной темы в директорию <code>/wp-content/themes</code> по FTP."
 
-#: wp-admin/theme-install.php:75
-msgid "You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter."
-msgstr "Можно искать темы по ключевому слову, автору или метке, либо указать более подробные критерии для поиска с помощью фильтра характеристик."
+#: wp-admin/theme-install.php:76
+msgid "Alternately, you can browse the themes that are Featured, Popular, or Latest. When you find a theme you like, you can preview it or install it."
+msgstr "Вы также можете просматривать избранные, популярные и свежие темы. Если вы нашли тему, которая вам понравилась, её можно просмотреть или установить."
 
 #: wp-admin/theme-install.php:75 wp-admin/themes.php:51
 msgid "The search results will be updated as you type."
 msgstr "Результаты поиска обновляются по мере набора."
 
-#: wp-admin/theme-install.php:76
-msgid "Alternately, you can browse the themes that are Featured, Popular, or Latest. When you find a theme you like, you can preview it or install it."
-msgstr "Вы также можете просматривать избранные, популярные и свежие темы. Если вы нашли тему, которая вам понравилась, её можно просмотреть или установить."
+#: wp-admin/theme-install.php:75
+msgid "You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter."
+msgstr "Можно искать темы по ключевому слову, автору или метке, либо указать более подробные критерии для поиска с помощью фильтра характеристик."
 
 #: wp-admin/theme-install.php:74
 msgid "You can find additional themes for your site by using the Theme Browser/Installer on this screen, which will display themes from the <a href=\"%s\" target=\"_blank\">WordPress.org Theme Directory</a>. These themes are designed and developed by third parties, are available free of charge, and are compatible with the license WordPress uses."
 msgstr "На этом экране вы можете найти дополнительные темы для вашего сайта с помощью скрипта просмотра/установки тем, который отобразит темы из <a href=\"%s\" target=\"_blank\">каталога на WordPress.org</a>. Эти темы создаются третьими лицами, распространяются бесплатно и совместимы с лицензией WordPress."
 
-#: wp-admin/theme-install.php:52 wp-admin/themes.php:114
-msgid "Number of Themes found: %d"
-msgstr "Количество найденных тем: %d"
-
 #: wp-admin/theme-install.php:53 wp-admin/theme-install.php:175
 #: wp-admin/themes.php:115 wp-admin/themes.php:264
 msgid "No themes found. Try a different search."
 msgstr "Тем не найдено. Попробуйте другой запрос."
+
+#: wp-admin/theme-install.php:52 wp-admin/themes.php:114
+msgid "Number of Themes found: %d"
+msgstr "Количество найденных тем: %d"
 
 #: wp-admin/theme-install.php:49 wp-admin/theme-install.php:118
 #: wp-admin/theme-install.php:120 wp-admin/update.php:241
@@ -1460,13 +1460,13 @@ msgstr "<a href=\"https://codex.wordpress.org/Теги_шаблонов\" target
 msgid "<a href=\"https://codex.wordpress.org/Editing_Files\" target=\"_blank\">Documentation on Editing Files</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Editing_Files\" target=\"_blank\">Документация по редактированию файлов</a>"
 
-#: wp-admin/theme-editor.php:39
-msgid "<a href=\"https://codex.wordpress.org/Theme_Development\" target=\"_blank\">Documentation on Theme Development</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Создание_тем\" target=\"_blank\">Документация по созданию тем</a>"
-
 #: wp-admin/theme-editor.php:40 wp-admin/themes.php:91
 msgid "<a href=\"https://codex.wordpress.org/Using_Themes\" target=\"_blank\">Documentation on Using Themes</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Using_Themes\" target=\"_blank\">Документация по использованию тем</a>"
+
+#: wp-admin/theme-editor.php:39
+msgid "<a href=\"https://codex.wordpress.org/Theme_Development\" target=\"_blank\">Documentation on Theme Development</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Создание_тем\" target=\"_blank\">Документация по созданию тем</a>"
 
 #: wp-admin/theme-editor.php:33
 msgid "Upgrading to a newer version of the same theme will override changes made here. To avoid this, consider creating a <a href=\"%s\" target=\"_blank\">child theme</a> instead."
@@ -1800,13 +1800,13 @@ msgstr "<strong>%1$s</strong> автора <em>%2$s</em> (плагин такж�
 msgid "You are about to remove the following plugins:"
 msgstr "Вы собираетесь удалить следующие плагины:"
 
-#: wp-admin/plugins.php:294
-msgid "Delete Plugins"
-msgstr "Удалить плагины"
-
 #: wp-admin/plugins.php:296
 msgid "These plugins may be active on other sites in the network."
 msgstr "Эти плагины могут быть активными на других сайтах сети."
+
+#: wp-admin/plugins.php:294
+msgid "Delete Plugins"
+msgstr "Удалить плагины"
 
 #: wp-admin/plugins.php:292
 msgid "You are about to remove the following plugin:"
@@ -1992,13 +1992,13 @@ msgstr "Изменение плагинов"
 msgid "You do not have sufficient permissions to edit plugins for this site."
 msgstr "У вас недостаточно полномочий, чтобы редактировать плагины на этом сайте."
 
-#: wp-admin/options.php:183
-msgid "The <code>%1$s</code> setting is unregistered. Unregistered settings are deprecated. See https://codex.wordpress.org/Settings_API"
-msgstr "Параметр <code>%1$s</code> не зарегистрирован. Незарегистрированные параметры считаются устаревшими. См. https://codex.wordpress.org/Settings_API"
-
 #: wp-admin/options.php:224
 msgid "All Settings"
 msgstr "Все настройки"
+
+#: wp-admin/options.php:183
+msgid "The <code>%1$s</code> setting is unregistered. Unregistered settings are deprecated. See https://codex.wordpress.org/Settings_API"
+msgstr "Параметр <code>%1$s</code> не зарегистрирован. Незарегистрированные параметры считаются устаревшими. См. https://codex.wordpress.org/Settings_API"
 
 #: wp-admin/options.php:148
 msgid "You do not have sufficient permissions to modify unregistered settings for this site."
@@ -2008,13 +2008,13 @@ msgstr "У вас недостаточно полномочий, чтобы из
 msgid "<strong>ERROR</strong>: options page not found."
 msgstr "<strong>ОШИБКА</strong>: не найдена страница настроек."
 
-#: wp-admin/options-writing.php:161
-msgid "When you publish a new post, WordPress automatically notifies the following site update services. For more about this, see <a href=\"https://codex.wordpress.org/Update_Services\">Update Services</a> on the Codex. Separate multiple service <abbr title=\"Universal Resource Locator\">URL</abbr>s with line breaks."
-msgstr "Когда вы публикуете новую статью, WordPress автоматически уведомляет следующие сайты служб слежения за обновлениями. Более подробно об этом написано в статье <a href=\"https://codex.wordpress.org/Update_Services\">&laquo;Службы слежения за обновлениями&raquo;</a> в Кодексе. Если адресов служб несколько, пишите каждый в новой строке."
-
 #: wp-admin/options-writing.php:167
 msgid "WordPress is not notifying any <a href=\"https://codex.wordpress.org/Update_Services\">Update Services</a> because of your site&#8217;s <a href=\"%s\">visibility settings</a>."
 msgstr "WordPress не оповещает <a href=\"https://codex.wordpress.org/Update_Services\">сервисы обновлений</a> в соответствии с вашими настройками <a href=\"%s\">видимости</a>"
+
+#: wp-admin/options-writing.php:161
+msgid "When you publish a new post, WordPress automatically notifies the following site update services. For more about this, see <a href=\"https://codex.wordpress.org/Update_Services\">Update Services</a> on the Codex. Separate multiple service <abbr title=\"Universal Resource Locator\">URL</abbr>s with line breaks."
+msgstr "Когда вы публикуете новую статью, WordPress автоматически уведомляет следующие сайты служб слежения за обновлениями. Более подробно об этом написано в статье <a href=\"https://codex.wordpress.org/Update_Services\">&laquo;Службы слежения за обновлениями&raquo;</a> в Кодексе. Если адресов служб несколько, пишите каждый в новой строке."
 
 #: wp-admin/options-writing.php:136
 msgid "Default Mail Category"
@@ -2210,13 +2210,13 @@ msgstr "Если вы временно сделали корневую дире�
 msgid "If the root directory of your site were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so this is the url rewrite rule you should have in your <code>web.config</code> file. Create a new file, called <code>web.config</code> in the root directory of your site. Click in the field and press <kbd>CTRL + a</kbd> to select all. Then insert this code into the <code>web.config</code> file."
 msgstr "Если бы корневая директория вашего сайта была <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">доступна для записи</a>, мы могли бы выполнить следующий шаг автоматически, но это не так. Вот правило преобразования ссылок, которое должно быть в файле <code>web.config</code>. Создайте новый файл с именем <code>web.config</code> в корневой директории вашего сайта. Кликните на поле и нажмите <kbd>CTRL + a</kbd>, чтобы выделить весь текст. Затем вставьте этот код в файл <code>web.config</code>."
 
-#: wp-admin/options-permalink.php:260
-msgid "If your <code>web.config</code> file were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so this is the url rewrite rule you should have in your <code>web.config</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all. Then insert this rule inside of the <code>/&lt;configuration&gt;/&lt;system.webServer&gt;/&lt;rewrite&gt;/&lt;rules&gt;</code> element in <code>web.config</code> file."
-msgstr "Если бы ваш файл <code>web.config</code> был <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">доступен для записи</a>, мы могли бы выполнить следующий шаг автоматически, но это не так. Вот правило преобразования ссылок, которое должно быть в файле <code>web.config</code>. Кликните на поле и нажмите <kbd>CTRL + a</kbd>, чтобы выделить весь текст. Затем вставьте это правило внутрь элемента <code>/&lt;configuration&gt;/&lt;system.webServer&gt;/&lt;rewrite&gt;/&lt;rules&gt;</code> в файле <code>web.config</code>."
-
 #: wp-admin/options-permalink.php:265
 msgid "If you temporarily make your <code>web.config</code> file writable for us to generate rewrite rules automatically, do not forget to revert the permissions after rule has been saved."
 msgstr "Если вы временно сделали файл <code>web.config</code> доступным для записи, чтобы мы могли автоматически создать правила преобразования ссылок, не забудьте вернуть исходные права доступа после того, как правила будут сохранены."
+
+#: wp-admin/options-permalink.php:260
+msgid "If your <code>web.config</code> file were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so this is the url rewrite rule you should have in your <code>web.config</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all. Then insert this rule inside of the <code>/&lt;configuration&gt;/&lt;system.webServer&gt;/&lt;rewrite&gt;/&lt;rules&gt;</code> element in <code>web.config</code> file."
+msgstr "Если бы ваш файл <code>web.config</code> был <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">доступен для записи</a>, мы могли бы выполнить следующий шаг автоматически, но это не так. Вот правило преобразования ссылок, которое должно быть в файле <code>web.config</code>. Кликните на поле и нажмите <kbd>CTRL + a</kbd>, чтобы выделить весь текст. Затем вставьте это правило внутрь элемента <code>/&lt;configuration&gt;/&lt;system.webServer&gt;/&lt;rewrite&gt;/&lt;rules&gt;</code> в файле <code>web.config</code>."
 
 #: wp-admin/options-permalink.php:246
 msgid "Tag base"
@@ -2388,13 +2388,13 @@ msgstr "Размер миниатюры"
 msgid "The sizes listed below determine the maximum dimensions in pixels to use when adding an image to the Media Library."
 msgstr "Указанные ниже числа определяют максимальные размеры изображения в пикселях при добавлении его в библиотеку файлов."
 
-#: wp-admin/options-media.php:34
-msgid "<a href=\"https://codex.wordpress.org/Settings_Media_Screen\" target=\"_blank\">Documentation on Media Settings</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Settings_Media_Screen\" target=\"_blank\">Документация по настройкам медиафайлов</a>"
-
 #: wp-admin/options-media.php:48
 msgid "Image sizes"
 msgstr "Размеры изображений"
+
+#: wp-admin/options-media.php:34
+msgid "<a href=\"https://codex.wordpress.org/Settings_Media_Screen\" target=\"_blank\">Documentation on Media Settings</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Settings_Media_Screen\" target=\"_blank\">Документация по настройкам медиафайлов</a>"
 
 #: wp-admin/options-media.php:21
 msgid "Uploading Files allows you to choose the folder and path for storing your uploaded files."
@@ -2420,33 +2420,33 @@ msgstr "Примечание:"
 msgid "Site Language"
 msgstr "Язык сайта"
 
-#: wp-admin/options-general.php:315
-msgid "<a href=\"https://codex.wordpress.org/Formatting_Date_and_Time\">Documentation on date and time formatting</a>."
-msgstr "<a href=\"https://codex.wordpress.org/Форматирование_даты_и_времени\">Документация по форматированию даты и времени</a>."
-
 #: wp-admin/options-general.php:321
 msgid "Week Starts On"
 msgstr "Первый день недели"
+
+#: wp-admin/options-general.php:315
+msgid "<a href=\"https://codex.wordpress.org/Formatting_Date_and_Time\">Documentation on date and time formatting</a>."
+msgstr "<a href=\"https://codex.wordpress.org/Форматирование_даты_и_времени\">Документация по форматированию даты и времени</a>."
 
 #: wp-admin/options-general.php:313
 msgid "Custom time format:"
 msgstr "Произвольный формат времени:"
 
-#: wp-admin/options-general.php:280 wp-admin/options-general.php:313
-msgid "example:"
-msgstr "пример:"
-
 #: wp-admin/options-general.php:312
 msgid "enter a custom time format in the following field"
 msgstr "введите в следующее поле произвольный формат времени"
 
-#: wp-admin/options-general.php:279
-msgid "enter a custom date format in the following field"
-msgstr "введите в следующее поле произвольный формат даты"
+#: wp-admin/options-general.php:280 wp-admin/options-general.php:313
+msgid "example:"
+msgstr "пример:"
 
 #: wp-admin/options-general.php:280
 msgid "Custom date format:"
 msgstr "Произвольный формат даты:"
+
+#: wp-admin/options-general.php:279
+msgid "enter a custom date format in the following field"
+msgstr "введите в следующее поле произвольный формат даты"
 
 #: wp-admin/options-general.php:279 wp-admin/options-general.php:312
 msgid "Custom:"
@@ -2528,13 +2528,13 @@ msgstr "Объясните в нескольких словах, о чём эт�
 msgid "<a href=\"https://codex.wordpress.org/Settings_General_Screen\" target=\"_blank\">Documentation on General Settings</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Settings_General_Screen\" target=\"_blank\">Документация по общим настройкам</a>"
 
-#: wp-admin/options-general.php:92
-msgid "You can set the language, and the translation files will be automatically downloaded and installed (available if your filesystem is writable)."
-msgstr "Можно выбрать язык, и файлы перевода будут автоматически скачаны и установлены (если файловая система доступна для записи)."
-
 #: wp-admin/options-general.php:93
 msgid "UTC means Coordinated Universal Time."
 msgstr "UTC означает &laquo;Coordinated Universal Time&raquo; (всемирное координированное время)."
+
+#: wp-admin/options-general.php:92
+msgid "You can set the language, and the translation files will be automatically downloaded and installed (available if your filesystem is writable)."
+msgstr "Можно выбрать язык, и файлы перевода будут автоматически скачаны и установлены (если файловая система доступна для записи)."
 
 #: wp-admin/options-general.php:89
 msgid "If you want site visitors to be able to register themselves, as opposed to by the site administrator, check the membership box. A default user role can be set for all new users, whether self-registered or registered by the site admin."
@@ -2548,16 +2548,16 @@ msgstr "Адрес WordPress и адрес сайта могут совпада�
 msgid "Most themes display the site title at the top of every page, in the title bar of the browser, and as the identifying name for syndicated feeds. The tagline is also displayed by many themes."
 msgstr "Большинство тем оформления отображают заголовок сайта в верхней части каждой страницы, в заголовке окна браузера и RSS-лентах. Краткое описание также отображается во многих темах."
 
+#: wp-admin/options-general.php:84
+msgid "The fields on this screen determine some of the basics of your site setup."
+msgstr "Поля на этом экране определяют основные настройки вашего сайта."
+
 #. translators: date and time format for exact current time, mainly about
 #. timezones, see http:php.net/date
 #: wp-admin/options-general.php:21
 msgctxt "timezone date format"
 msgid "Y-m-d H:i:s"
 msgstr "d.m.Y H:i:s"
-
-#: wp-admin/options-general.php:84
-msgid "The fields on this screen determine some of the basics of your site setup."
-msgstr "Поля на этом экране определяют основные настройки вашего сайта."
 
 #: wp-admin/options-general.php:18
 msgid "General Settings"
@@ -2770,7 +2770,7 @@ msgstr "Удалить меню"
 
 #: wp-admin/nav-menus.php:766
 msgid "(Currently set to: %s)"
-msgstr "(Сейчас отображает меню &laquo;%s&raquo;)"
+msgstr "(Сейчас отображает меню «%s»)"
 
 #: wp-admin/nav-menus.php:761
 msgid "Theme locations"
@@ -3406,16 +3406,16 @@ msgstr "Ошибка XML: %1$s в строке %2$s"
 msgid "Search Links"
 msgstr "Поиск ссылок"
 
-#: wp-admin/link-manager.php:60
-msgid "<a href=\"https://codex.wordpress.org/Links_Screen\" target=\"_blank\">Documentation on Managing Links</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Links_Screen\" target=\"_blank\">Документация по управлению ссылками</a>"
-
 #: wp-admin/link-manager.php:81
 msgid "%s link deleted."
 msgid_plural "%s links deleted"
 msgstr[0] "%s ссылка удалена."
 msgstr[1] "%s ссылки удалены."
 msgstr[2] "%s ссылок удалены."
+
+#: wp-admin/link-manager.php:60
+msgid "<a href=\"https://codex.wordpress.org/Links_Screen\" target=\"_blank\">Documentation on Managing Links</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Links_Screen\" target=\"_blank\">Документация по управлению ссылками</a>"
 
 #: wp-admin/link-manager.php:55
 msgid "If you delete a link, it will be removed permanently, as Links do not have a Trash function yet."
@@ -3498,21 +3498,21 @@ msgstr "В вашем файле <code>wp-config.php</code> указан пус�
 msgid "Configuration Error"
 msgstr "Ошибка конфигурации"
 
-#: wp-admin/install.php:174
-msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
-msgstr "Не удаётся продолжить установку, так как <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> требует MySQL версии %2$s или выше. У вас версия %3$s."
-
 #: wp-admin/install.php:178
 msgid "Insufficient Requirements"
 msgstr "Несоответствие требованиям"
 
-#: wp-admin/install.php:170
-msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
-msgstr "Не удаётся продолжить установку, так как <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> требует PHP версии %2$s или выше и MySQL версии %3$s или выше. У вас PHP версии %4$s и MySQL версии %5$s."
+#: wp-admin/install.php:174
+msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
+msgstr "Не удаётся продолжить установку, так как <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> требует MySQL версии %2$s или выше. У вас версия %3$s."
 
 #: wp-admin/install.php:172
 msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "Не удаётся продолжить установку, так как <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> требует PHP версии %2$s или выше. У вас версия %3$s."
+
+#: wp-admin/install.php:170
+msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
+msgstr "Не удаётся продолжить установку, так как <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> требует PHP версии %2$s или выше и MySQL версии %3$s или выше. У вас PHP версии %4$s и MySQL версии %5$s."
 
 #: wp-admin/install.php:150
 msgid "Install WordPress"
@@ -3783,13 +3783,13 @@ msgstr "<strong><em>Запомните этот пароль!</em></strong> Он
 msgid "An automated WordPress update has failed to complete! Please notify the site administrator."
 msgstr "Автоматическое обновление WordPress завершить не удалось! Пожалуйста, сообщите администратору сайта."
 
-#: wp-admin/includes/update.php:289
-msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">View version %4$s details</a> or <a href=\"%5$s\" class=\"update-link\">update now</a>."
-msgstr "Доступна свежая версия %1$s. Можно <a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">посмотреть информацию о версии %4$s</a> или <a href=\"%5$s\" class=\"update-link\">обновить сейчас</a>."
-
 #: wp-admin/includes/update.php:428
 msgid "An automated WordPress update has failed to complete - <a href=\"%s\">please attempt the update again now</a>."
 msgstr "Автоматическое обновление WordPress завершить не удалось &#8212; <a href=\"%s\">пожалуйста, попробуйте ещё раз</a>."
+
+#: wp-admin/includes/update.php:289
+msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">View version %4$s details</a> or <a href=\"%5$s\" class=\"update-link\">update now</a>."
+msgstr "Доступна свежая версия %1$s. Можно <a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">посмотреть информацию о версии %4$s</a> или <a href=\"%5$s\" class=\"update-link\">обновить сейчас</a>."
 
 #: wp-admin/includes/update.php:287
 msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">View version %4$s details</a>. <em>Automatic update is unavailable for this plugin.</em>"
@@ -4352,13 +4352,13 @@ msgstr "Добавить комментарий"
 msgid "Reply to Comment"
 msgstr "Ответить на комментарий"
 
-#: wp-admin/includes/screen.php:1136
-msgid "Number of items per page:"
-msgstr "Количество элементов на странице:"
-
 #: wp-admin/includes/taxonomy.php:116
 msgid "You did not enter a category name."
 msgstr "Вы не ввели название рубрики."
+
+#: wp-admin/includes/screen.php:1136
+msgid "Number of items per page:"
+msgstr "Количество элементов на странице:"
 
 #: wp-admin/includes/screen.php:1110
 msgid "Number of Columns:"
@@ -5036,12 +5036,12 @@ msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently 
 msgstr "Вы попытались войти в консоль сайта &laquo;%1$s&raquo;, но у вас на текущий момент нет туда доступа. Если вы считаете, что должны иметь доступ к сайту &laquo;%1$s&raquo;, свяжитесь с администратором сети."
 
 #: wp-admin/includes/ms.php:482
-msgid "Size in megabytes"
-msgstr "Размер в мегабайтах"
-
-#: wp-admin/includes/ms.php:482
 msgid "MB (Leave blank for network default)"
 msgstr "МБ (оставьте пустым для значения по умолчанию)"
+
+#: wp-admin/includes/ms.php:482
+msgid "Size in megabytes"
+msgstr "Размер в мегабайтах"
 
 #: wp-admin/includes/ms.php:479
 msgid "Site Upload Space Quota"
@@ -5409,13 +5409,13 @@ msgstr "https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments"
 msgid "Allow <a href=\"%s\" target=\"_blank\">trackbacks and pingbacks</a> on this page."
 msgstr "Разрешить <a href=\"%s\" target=\"_blank\">обратные ссылки и уведомления</a>."
 
-#: wp-admin/includes/meta-boxes.php:575
-msgid "Custom fields can be used to add extra metadata to a post that you can <a href=\"https://codex.wordpress.org/Using_Custom_Fields\" target=\"_blank\">use in your theme</a>."
-msgstr "Произвольные поля позволяют добавлять к записям метаданные, которые вы можете <a href=\"https://codex.wordpress.org/Using_Custom_Fields\" target=\"_blank\">использовать в своей теме</a>."
-
 #: wp-admin/includes/meta-boxes.php:590
 msgid "Allow comments."
 msgstr "Разрешить комментарии."
+
+#: wp-admin/includes/meta-boxes.php:575
+msgid "Custom fields can be used to add extra metadata to a post that you can <a href=\"https://codex.wordpress.org/Using_Custom_Fields\" target=\"_blank\">use in your theme</a>."
+msgstr "Произвольные поля позволяют добавлять к записям метаданные, которые вы можете <a href=\"https://codex.wordpress.org/Using_Custom_Fields\" target=\"_blank\">использовать в своей теме</a>."
 
 #: wp-admin/includes/meta-boxes.php:549
 msgid "Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. If you link other WordPress sites, they&#8217;ll be notified automatically using <a href=\"https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments\" target=\"_blank\">pingbacks</a>, no other action necessary."
@@ -6037,13 +6037,13 @@ msgstr "Открытый ключ:"
 msgid "Authentication Keys"
 msgstr "Ключи аутентификации"
 
-#: wp-admin/includes/file.php:1151
-msgid "example: www.wordpress.org"
-msgstr "пример: www.wordpress.org"
-
 #: wp-admin/includes/file.php:1163
 msgid "This password will not be stored on the server."
 msgstr "Этот пароль не будет храниться на сервере."
+
+#: wp-admin/includes/file.php:1151
+msgid "example: www.wordpress.org"
+msgstr "пример: www.wordpress.org"
 
 #: wp-admin/includes/file.php:1150
 msgid "Hostname"
@@ -6632,6 +6632,11 @@ msgstr "%1$s <span class=\"count\">(%2$s)</span>"
 msgid "Error: [%1$s] %2$s"
 msgstr "Ошибка: [%1$s] %2$s"
 
+#. translators: 1: Error code, 2: Error message.
+#: wp-admin/includes/class-wp-upgrader.php:3211
+msgid "Rollback Error: [%1$s] %2$s"
+msgstr "Ошибка при откате: [%1$s] %2$s"
+
 #: wp-admin/includes/class-wp-upgrader.php:3187
 msgid ""
 "UPDATE LOG\n"
@@ -6639,11 +6644,6 @@ msgid ""
 msgstr ""
 "ЖУРНАЛ ОБНОВЛЕНИЯ\n"
 "================="
-
-#. translators: 1: Error code, 2: Error message.
-#: wp-admin/includes/class-wp-upgrader.php:3211
-msgid "Rollback Error: [%1$s] %2$s"
-msgstr "Ошибка при откате: [%1$s] %2$s"
 
 #: wp-admin/includes/class-wp-upgrader.php:3184
 msgid "[%s] Background updates have finished"
@@ -6754,13 +6754,13 @@ msgstr "Если вы обратитесь к нам, мы также позаб
 msgid "Keeping your site updated is important for security. It also makes the internet a safer place for you and your readers."
 msgstr "Своевременно обновлять сайт важно из соображений безопасности. Это также делает Интернет более безопасным местом для вас и ваших читателей."
 
-#: wp-admin/includes/class-wp-upgrader.php:3022
-msgid "The WordPress team is willing to help you. Forward this email to %s and the team will work with you to make sure your site is working."
-msgstr "Команда WordPress предлагает вам свою помощь. Перешлите это письмо на %s, и мы свяжемся с вами, чтобы обеспечить работоспособность вашего сайта."
-
 #: wp-admin/includes/class-wp-upgrader.php:3025
 msgid "If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help."
 msgstr "Если вы столкнётесь с проблемами и вам понадобится поддержка, вам помогут волонтёры на форумах WordPress.org."
+
+#: wp-admin/includes/class-wp-upgrader.php:3022
+msgid "The WordPress team is willing to help you. Forward this email to %s and the team will work with you to make sure your site is working."
+msgstr "Команда WordPress предлагает вам свою помощь. Перешлите это письмо на %s, и мы свяжемся с вами, чтобы обеспечить работоспособность вашего сайта."
 
 #: wp-admin/includes/class-wp-upgrader.php:3014
 msgid "Please check out your site now. It's possible that everything is working. If it says you need to update, you should do so:"
@@ -7254,14 +7254,14 @@ msgstr "Перейти на страницу плагинов"
 msgid "Activate Plugin"
 msgstr "Активировать плагин"
 
+#: wp-admin/includes/class-wp-upgrader-skins.php:158 wp-admin/update.php:54
+msgid "Update Plugin"
+msgstr "Обновить плагин"
+
 #: wp-admin/includes/class-wp-themes-list-table.php:216
 #: wp-admin/theme-editor.php:33 wp-admin/update-core.php:305
 msgid "https://codex.wordpress.org/Child_Themes"
 msgstr "https://codex.wordpress.org/Дочерние_темы"
-
-#: wp-admin/includes/class-wp-upgrader-skins.php:158 wp-admin/update.php:54
-msgid "Update Plugin"
-msgstr "Обновить плагин"
 
 #: wp-admin/includes/class-wp-themes-list-table.php:215
 msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
@@ -7365,23 +7365,14 @@ msgctxt "Number/count of items"
 msgid "Count"
 msgstr "Записи"
 
-#: wp-admin/includes/class-wp-press-this.php:1442
-msgid "Standard Editor"
-msgstr "Стандартный редактор"
-
 #: wp-admin/includes/class-wp-press-this.php:1444
 #: wp-admin/includes/meta-boxes.php:257 wp-admin/includes/meta-boxes.php:258
 msgid "Submit for Review"
 msgstr "Отправить на утверждение"
 
-#: wp-admin/includes/class-wp-press-this.php:1337
-#: wp-admin/includes/class-wp-press-this.php:1338
-msgid "Post title"
-msgstr "Заголовок записи"
-
-#: wp-admin/includes/class-wp-press-this.php:1342
-msgid "Suggested media"
-msgstr "Предлагаемые файлы"
+#: wp-admin/includes/class-wp-press-this.php:1442
+msgid "Standard Editor"
+msgstr "Стандартный редактор"
 
 #: wp-admin/includes/class-wp-press-this.php:1403
 #: wp-admin/includes/class-wp-press-this.php:1413
@@ -7389,46 +7380,55 @@ msgstr "Предлагаемые файлы"
 msgid "Back to post options"
 msgstr "Вернуться к свойствам записи"
 
-#: wp-admin/includes/class-wp-press-this.php:1302
-msgid "Enter a URL to scan"
-msgstr "Введите URL для сканирования"
+#: wp-admin/includes/class-wp-press-this.php:1342
+msgid "Suggested media"
+msgstr "Предлагаемые файлы"
 
-#: wp-admin/includes/class-wp-press-this.php:1303
-msgid "Scan"
-msgstr "Сканировать"
+#: wp-admin/includes/class-wp-press-this.php:1337
+#: wp-admin/includes/class-wp-press-this.php:1338
+msgid "Post title"
+msgstr "Заголовок записи"
 
 #: wp-admin/includes/class-wp-press-this.php:1328
 msgid "You should upgrade <a href=\"%s\" target=\"_blank\">your bookmarklet</a> to the latest version!"
 msgstr "Вам стоит обновить <a href=\"%s\" target=\"_blank\">закладку</a> до текущей версии!"
 
+#: wp-admin/includes/class-wp-press-this.php:1303
+msgid "Scan"
+msgstr "Сканировать"
+
+#: wp-admin/includes/class-wp-press-this.php:1302
+msgid "Enter a URL to scan"
+msgstr "Введите URL для сканирования"
+
 #: wp-admin/includes/class-wp-press-this.php:1301
 msgid "Scan site for content"
 msgstr "Сканировать содержимое сайта"
+
+#: wp-admin/includes/class-wp-press-this.php:1295
+msgid "Hide post options"
+msgstr "Скрыть свойства записи"
 
 #: wp-admin/includes/class-wp-press-this.php:1293
 msgid "Show post options"
 msgstr "Показать свойства записи"
 
-#: wp-admin/includes/class-wp-press-this.php:1295
-msgid "Hide post options"
-msgstr "Скрыть свойства записи"
+#: wp-admin/includes/class-wp-press-this.php:1206
+msgid "Press This!"
+msgstr "Опубликовать!"
 
 #: wp-admin/includes/class-wp-press-this.php:1106
 msgctxt "Used in Press This to indicate where the content comes from."
 msgid "Source:"
 msgstr "Источник:"
 
-#: wp-admin/includes/class-wp-press-this.php:1206
-msgid "Press This!"
-msgstr "Опубликовать!"
+#: wp-admin/includes/class-wp-press-this.php:856
+msgid "Search categories"
+msgstr "Поиск рубрик"
 
 #: wp-admin/includes/class-wp-press-this.php:854
 msgid "Search categories by name"
 msgstr "Поиск рубрик по названию"
-
-#: wp-admin/includes/class-wp-press-this.php:856
-msgid "Search categories"
-msgstr "Поиск рубрик"
 
 #: wp-admin/includes/class-wp-press-this.php:847
 #: wp-admin/includes/class-wp-press-this.php:896
@@ -7444,30 +7444,30 @@ msgstr "Показать поле для добавления рубрики"
 msgid "Post formats"
 msgstr "Форматы записей"
 
-#: wp-admin/includes/class-wp-press-this.php:283
-msgid "Could not download the source URL (native error: %s)."
-msgstr "Не удалось скачать содержимое источника (текст ошибки: %s)."
-
 #: wp-admin/includes/class-wp-press-this.php:285
 msgid "Could not save or locate the temporary download file for the source URL."
 msgstr "Не удалось сохранить или найти временный файл с содержимым источника."
+
+#: wp-admin/includes/class-wp-press-this.php:283
+msgid "Could not download the source URL (native error: %s)."
+msgstr "Не удалось скачать содержимое источника (текст ошибки: %s)."
 
 #: wp-admin/includes/class-wp-press-this.php:283
 #: wp-admin/includes/class-wp-press-this.php:285
 msgid "Error: %s"
 msgstr "Ошибка: %s"
 
-#: wp-admin/includes/class-wp-press-this.php:112
-msgid "Invalid post."
-msgstr "Неверная запись."
+#: wp-admin/includes/class-wp-press-this.php:226
+msgid "Error while adding the category. Please try again later."
+msgstr "Ошибка при добавлении рубрики. Повторите попытку позже."
 
 #: wp-admin/includes/class-wp-press-this.php:219
 msgid "This category cannot be added. Please change the name and try again."
 msgstr "Такую рубрику добавить нельзя. Пожалуйста, измените название и попробуйте ещё раз."
 
-#: wp-admin/includes/class-wp-press-this.php:226
-msgid "Error while adding the category. Please try again later."
-msgstr "Ошибка при добавлении рубрики. Повторите попытку позже."
+#: wp-admin/includes/class-wp-press-this.php:112
+msgid "Invalid post."
+msgstr "Неверная запись."
 
 #: wp-admin/includes/class-wp-press-this.php:106
 msgid "Missing post ID."
@@ -7620,13 +7620,13 @@ msgstr[0] "Мои <span class=\"count\">(%s)</span>"
 msgstr[1] "Мои <span class=\"count\">(%s)</span>"
 msgstr[2] "Мои <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:572
-msgid "View details"
-msgstr "Детали"
-
 #: wp-admin/includes/class-wp-plugins-list-table.php:577
 msgid "Visit plugin site"
 msgstr "Перейти на страницу плагина"
+
+#: wp-admin/includes/class-wp-plugins-list-table.php:572
+msgid "View details"
+msgstr "Детали"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:457
 msgid "Open this file in the Plugin Editor"
@@ -7749,13 +7749,13 @@ msgstr "<strong>Совместим</strong> с вашей версией WordPre
 msgid "<strong>Incompatible</strong> with your version of WordPress"
 msgstr "<strong>Несовместим</strong> с вашей версией WordPress."
 
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:491
-msgid "%s Active Installs"
-msgstr "%s установок"
-
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:497
 msgid "Untested with your version of WordPress"
 msgstr "Не тестировался с вашей версией WordPress."
+
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:491
+msgid "%s Active Installs"
+msgstr "%s установок"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:487
 #: wp-admin/includes/plugin-install.php:469
@@ -7845,15 +7845,15 @@ msgctxt "Plugin Installer"
 msgid "Beta Testing"
 msgstr "Бета-тестирование"
 
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:69
-msgctxt "Plugin Installer"
-msgid "Recommended"
-msgstr "Рекомендуемые"
-
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:70
 msgctxt "Plugin Installer"
 msgid "Favorites"
 msgstr "Любимые"
+
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:69
+msgctxt "Plugin Installer"
+msgid "Recommended"
+msgstr "Рекомендуемые"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:68
 msgctxt "Plugin Installer"
@@ -8641,26 +8641,26 @@ msgstr "Не удалось вставить ссылку в базу данны
 msgid "Could not update link in the database"
 msgstr "Не удалось обновить ссылку в базе данных"
 
-#: wp-admin/includes/ajax-actions.php:2904
-msgid "You do not have sufficient permissions to update plugins on this site."
-msgstr "У вас недостаточно полномочий, чтобы обновлять плагины на этом сайте."
-
 #: wp-admin/includes/ajax-actions.php:2951
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
 msgstr "Не удалось подключиться к файловой системе. Перепроверьте координаты."
+
+#: wp-admin/includes/ajax-actions.php:2904
+msgid "You do not have sufficient permissions to update plugins on this site."
+msgstr "У вас недостаточно полномочий, чтобы обновлять плагины на этом сайте."
 
 #. translators: 1: User's display name.
 #: wp-admin/includes/ajax-actions.php:2871
 msgid "%s has been logged out."
 msgstr "Сессии пользователя %s завершены."
 
-#: wp-admin/includes/ajax-actions.php:2859
-msgid "Could not log out user sessions. Please try again."
-msgstr "Не удалось выйти из сессий пользователя. Пожалуйста, попробуйте ещё раз."
-
 #: wp-admin/includes/ajax-actions.php:2867
 msgid "You are now logged out everywhere else."
 msgstr "Вы вышли из других сессий."
+
+#: wp-admin/includes/ajax-actions.php:2859
+msgid "Could not log out user sessions. Please try again."
+msgstr "Не удалось выйти из сессий пользователя. Пожалуйста, попробуйте ещё раз."
 
 #: wp-admin/includes/ajax-actions.php:2772
 msgid "This preview is unavailable in the editor."
@@ -8756,16 +8756,16 @@ msgstr "Извините, для ответа на комментарий вам
 msgid "ERROR: you are replying to a comment on a draft post."
 msgstr "ОШИБКА: вы отвечаете на комментарий к черновику."
 
+#: wp-admin/includes/ajax-actions.php:692
+msgid "Comment %d does not exist"
+msgstr "Комментария %d не существует"
+
 #: wp-admin/includes/ajax-actions.php:382
 msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] "%s элемент"
 msgstr[1] "%s элемента"
 msgstr[2] "%s элементов"
-
-#: wp-admin/includes/ajax-actions.php:692
-msgid "Comment %d does not exist"
-msgstr "Комментария %d не существует"
 
 #. translators: 1: user_login, 2: user_email
 #: wp-admin/includes/ajax-actions.php:287
@@ -8800,13 +8800,13 @@ msgstr "Если у вас есть записи и комментарии в д
 msgid "The <strong>%s</strong> importer is invalid or is not installed."
 msgstr "Плагин импорта <strong>%s</strong> неработоспособен или не установлен."
 
-#: wp-admin/import.php:28
-msgid "<a href=\"https://codex.wordpress.org/Tools_Import_Screen\" target=\"_blank\">Documentation on Import</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Tools_Import_Screen\" target=\"_blank\">Документация по импорту</a>"
-
 #: wp-admin/import.php:57 wp-admin/users.php:220
 msgid "ERROR:"
 msgstr "ОШИБКА:"
+
+#: wp-admin/import.php:28
+msgid "<a href=\"https://codex.wordpress.org/Tools_Import_Screen\" target=\"_blank\">Documentation on Import</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Tools_Import_Screen\" target=\"_blank\">Документация по импорту</a>"
 
 #: wp-admin/import.php:23
 msgid "In previous versions of WordPress, all importers were built-in. They have been turned into plugins since most people only use them once or infrequently."
@@ -8911,13 +8911,13 @@ msgstr "Когда вы сохраните файл, можно использо
 msgid "This format, which we call WordPress eXtended RSS or WXR, will contain your posts, pages, comments, custom fields, categories, and tags."
 msgstr "Этот формат, который мы назвали расширенным RSS для WordPress (WXR), будет содержать все ваши записи, произвольные поля, рубрики и метки."
 
-#: wp-admin/export.php:53
-msgid "<a href=\"https://codex.wordpress.org/Tools_Export_Screen\" target=\"_blank\">Documentation on Export</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Tools_Export_Screen\" target=\"_blank\">Документация по экспорту</a>"
-
 #: wp-admin/export.php:148
 msgid "When you click the button below WordPress will create an XML file for you to save to your computer."
 msgstr "Когда вы нажмёте кнопку, WordPress создаст XML-файл, который можно будет сохранить на компьютере."
+
+#: wp-admin/export.php:53
+msgid "<a href=\"https://codex.wordpress.org/Tools_Export_Screen\" target=\"_blank\">Documentation on Export</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Tools_Export_Screen\" target=\"_blank\">Документация по экспорту</a>"
 
 #: wp-admin/export.php:48
 msgid "Once generated, your WXR file can be imported by another WordPress site or by another blogging platform able to access this format."
@@ -8995,16 +8995,16 @@ msgstr[0] "%s запись удалена навсегда."
 msgstr[1] "%s записи удалены навсегда"
 msgstr[2] "%s записей удалены навсегда"
 
-#: wp-admin/edit.php:250
-msgid "1 post not updated, somebody is editing it."
-msgstr "1 запись не обновлена, кто-то её редактирует."
-
 #: wp-admin/edit.php:251
 msgid "%s post not updated, somebody is editing it."
 msgid_plural "%s posts not updated, somebody is editing them."
 msgstr[0] "%s запись не обновлена, кто-то их редактирует."
 msgstr[1] "%s записи не обновлены, кто-то их редактирует."
 msgstr[2] "%s записей не обновлены, кто-то их редактирует."
+
+#: wp-admin/edit.php:250
+msgid "1 post not updated, somebody is editing it."
+msgstr "1 запись не обновлена, кто-то её редактирует."
 
 #: wp-admin/edit.php:249
 msgid "%s post updated."
@@ -9029,13 +9029,13 @@ msgstr "Управление страницами очень похоже на �
 msgid "Managing Pages"
 msgstr "Управление страницами"
 
-#: wp-admin/edit.php:211
-msgid "<a href=\"https://codex.wordpress.org/Posts_Screen\" target=\"_blank\">Documentation on Managing Posts</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Posts_Screen\" target=\"_blank\">Документация по управлению записями</a>"
-
 #: wp-admin/edit.php:220
 msgid "Pages are similar to posts in that they have a title, body text, and associated metadata, but they are different in that they are not part of the chronological blog stream, kind of like permanent posts. Pages are not categorized or tagged, but can have a hierarchy. You can nest pages under other pages by making one the &#8220;Parent&#8221; of the other, creating a group of pages."
 msgstr "Страницы похожи на записи тем, что у них тоже есть заголовок, текст и метаданные, но отличаются от них тем, что не принадлежат к хронологическому потоку блога, а являются постоянными. Страницам не присваиваются рубрики и метки, однако они могут иметь иерархию. Можно размещать одни страницы под другими, выбирая родительскую страницу и получая группу страниц."
+
+#: wp-admin/edit.php:211
+msgid "<a href=\"https://codex.wordpress.org/Posts_Screen\" target=\"_blank\">Documentation on Managing Posts</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Posts_Screen\" target=\"_blank\">Документация по управлению записями</a>"
 
 #: wp-admin/edit.php:206
 msgid "When using Bulk Edit, you can change the metadata (categories, author, etc.) for all selected posts at once. To remove a post from the grouping, just click the x next to its name in the Bulk Edit area that appears."
@@ -9385,13 +9385,13 @@ msgstr "Обновить ссылку"
 msgid "<a href=\"%s\">Links</a> / Edit Link"
 msgstr "<a href=\"%s\">Ссылки</a> / Изменить ссылку"
 
-#: wp-admin/edit-form-comment.php:122
-msgid "In response to: <b>%s</b>"
-msgstr "В ответ на: <b>%s</b>"
-
 #: wp-admin/edit-form-comment.php:132
 msgid "In reply to: <b><a href=\"%1$s\">%2$s</a></b>"
 msgstr "В ответ автору <b><a href=\"%1$s\">%2$s</a></b>"
+
+#: wp-admin/edit-form-comment.php:122
+msgid "In response to: <b>%s</b>"
+msgstr "В ответ на: <b>%s</b>"
 
 #: wp-admin/edit-form-comment.php:104
 msgid "Submitted on: <b>%1$s</b>"
@@ -9520,13 +9520,13 @@ msgstr "Вставка медиафайлов"
 msgid "You can also embed media from many popular websites including Twitter, YouTube, Flickr and others by pasting the media URL on its own line into the content of your post/page. Please refer to the Codex to <a href=\"https://codex.wordpress.org/Embeds\">learn more about embeds</a>."
 msgstr "Можно также добавлять медиафайлы со многих популярных сайтов, включая Twitter, YouTube, Flickr и другие, просто скопировав адрес файла и вставив его в текст вашей записи или страницы отдельной строкой. Прочитайте статью в Кодексе, чтобы <a href=\"https://codex.wordpress.org/Вставка_объектов\">узнать больше о вставке объектов</a>."
 
-#: wp-admin/edit-form-advanced.php:344 wp-admin/media.php:83
-msgid "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\" target=\"_blank\">Documentation on Edit Media</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\" target=\"_blank\">Документация по редактированию медиафайлов</a>"
-
 #: wp-admin/edit-form-advanced.php:350
 msgid "You can upload and insert media (images, audio, documents, etc.) by clicking the Add Media button. You can select from the images and files already uploaded to the Media Library, or upload new media to add to your page or post. To create an image gallery, select the images to add and click the &#8220;Create a new gallery&#8221; button."
 msgstr "Вы можете загружать и вставлять медиафайлы (изображения, аудиофайлы, документы и т.д.), нажав кнопку &laquo;Добавить медиафайл&raquo;. Можно выбрать изображения и файлы, уже загруженные в библиотеку, либо загрузить новые файлы и добавить их в запись или страницу. Чтобы создать галерею, выберите изображения и нажмите кнопку &laquo;Создать новую галерею&raquo;."
+
+#: wp-admin/edit-form-advanced.php:344 wp-admin/media.php:83
+msgid "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\" target=\"_blank\">Documentation on Edit Media</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\" target=\"_blank\">Документация по редактированию медиафайлов</a>"
 
 #: wp-admin/edit-form-advanced.php:339 wp-admin/media.php:78
 msgid "Remember to click Update Media to save metadata entered or changed."
@@ -9540,13 +9540,13 @@ msgstr "Обратите внимание, что для обрезки изоб
 msgid "For images only, you can click on Edit Image under the thumbnail to expand out an inline image editor with icons for cropping, rotating, or flipping the image as well as for undoing and redoing. The boxes on the right give you more options for scaling the image, for cropping it, and for cropping the thumbnail in a different way than you crop the original image. You can click on Help in those boxes to get more information."
 msgstr "При работе с изображениями можно нажать кнопку &laquo;Редактировать&raquo; под миниатюрой, чтобы открыть встроенный редактор изображений, поддерживающий обрезку, поворот и отражение картинки, а также отмену и повтор. Блоки справа дают вам больше возможностей не только для масштабирования и обрезки основного изображения, но и для отдельной обработки миниатюры. Можно нажать ссылку &laquo;Помощь&raquo; в этих блоках, чтобы получить дополнительную информацию."
 
-#: wp-admin/edit-form-advanced.php:328
-msgid "<a href=\"https://codex.wordpress.org/Pages_Screen#Editing_Individual_Pages\" target=\"_blank\">Documentation on Editing Pages</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Pages_Screen#Editing_Individual_Pages\" target=\"_blank\">Документация по редактированию страниц</a>"
-
 #: wp-admin/edit-form-advanced.php:336
 msgid "This screen allows you to edit four fields for metadata in a file within the media library."
 msgstr "Этот экран позволяет изменить четыре поля метаданных, относящихся к файлу из библиотеки."
+
+#: wp-admin/edit-form-advanced.php:328
+msgid "<a href=\"https://codex.wordpress.org/Pages_Screen#Editing_Individual_Pages\" target=\"_blank\">Documentation on Editing Pages</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Pages_Screen#Editing_Individual_Pages\" target=\"_blank\">Документация по редактированию страниц</a>"
 
 #: wp-admin/edit-form-advanced.php:327
 msgid "<a href=\"https://codex.wordpress.org/Pages_Add_New_Screen\" target=\"_blank\">Documentation on Adding New Pages</a>"
@@ -9584,13 +9584,13 @@ msgstr "Пользователям клавиатуры: Работая в ви�
 msgid "You can enable distraction-free writing mode using the icon to the right. This feature is not available for old browsers or devices with small screens, and requires that the full-height editor be enabled in Screen Options."
 msgstr "Можно включить полноэкранный режим, нажав на иконку справа. Эта функция недоступна для старых браузеров и устройств с маленьким экраном. Функция также требует, чтобы в настройках экрана было включено растягивание редактора по высоте."
 
-#: wp-admin/edit-form-advanced.php:298
-msgid "The Text mode allows you to enter HTML along with your post text. Line breaks will be converted to paragraphs automatically."
-msgstr "Текстовый режим позволяет вводить HTML-код. Переводы строк будут автоматически преобразованы в абзацы."
-
 #: wp-admin/edit-form-advanced.php:299
 msgid "You can insert media files by clicking the icons above the post editor and following the directions. You can align or edit images using the inline formatting toolbar available in Visual mode."
 msgstr "Можно загружать медиафайлы, нажимая на иконки над редактором и следуя указаниям. Можно выравнивать или редактировать изображения с помощью всплывающей панели, доступной в визуальном режиме."
+
+#: wp-admin/edit-form-advanced.php:298
+msgid "The Text mode allows you to enter HTML along with your post text. Line breaks will be converted to paragraphs automatically."
+msgstr "Текстовый режим позволяет вводить HTML-код. Переводы строк будут автоматически преобразованы в абзацы."
 
 #: wp-admin/edit-form-advanced.php:297
 msgid "Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. "
@@ -9686,6 +9686,10 @@ msgstr "Страница обновлена."
 msgid "Page updated. <a href=\"%s\">View page</a>"
 msgstr "Страница обновлена. <a href=\"%s\">Посмотреть</a>"
 
+#: wp-admin/edit-form-advanced.php:93
+msgid "Post draft updated. <a target=\"_blank\" href=\"%s\">Preview post</a>"
+msgstr "Черновик записи обновлён. <a target=\"_blank\" href=\"%s\">Просмотреть</a>"
+
 #. translators: Publish box date format, see http:php.net/date
 #: wp-admin/edit-form-advanced.php:92 wp-admin/edit-form-advanced.php:105
 #: wp-admin/edit-form-comment.php:103
@@ -9695,10 +9699,6 @@ msgstr "Страница обновлена. <a href=\"%s\">Посмотреть
 #: wp-admin/includes/revision.php:224
 msgid "M j, Y @ H:i"
 msgstr "d.m.Y H:i"
-
-#: wp-admin/edit-form-advanced.php:93
-msgid "Post draft updated. <a target=\"_blank\" href=\"%s\">Preview post</a>"
-msgstr "Черновик записи обновлён. <a target=\"_blank\" href=\"%s\">Просмотреть</a>"
 
 #: wp-admin/edit-form-advanced.php:90
 msgid "Post scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview post</a>"
@@ -10023,13 +10023,13 @@ msgstr "Управлять произвольным заголовком и пр
 msgid "Custom Header"
 msgstr "Произвольный заголовок"
 
-#: wp-admin/custom-header.php:123
-msgid "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\" target=\"_blank\">Documentation on Custom Header</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\" target=\"_blank\">Документация по произвольному заголовку</a>"
-
 #: wp-admin/custom-header.php:270
 msgid "<strong>Random:</strong> Show a different image on each page."
 msgstr "<strong>Случайно:</strong> Показывать разные изображения на каждой странице."
+
+#: wp-admin/custom-header.php:123
+msgid "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\" target=\"_blank\">Documentation on Custom Header</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\" target=\"_blank\">Документация по произвольному заголовку</a>"
 
 #: wp-admin/custom-header.php:118
 msgid "Don&#8217;t forget to click &#8220;Save Changes&#8221; when you&#8217;re done!"
@@ -10287,14 +10287,14 @@ msgstr "Неизвестное действие."
 msgid "You are not allowed to edit comments on this post."
 msgstr "Вам не разрешено изменять комментарии к этой записи."
 
-#: wp-admin/comment.php:199
-msgid "Submitted on"
-msgstr "Отправлен"
-
 #. translators: 2: comment date, 3: comment time
 #: wp-admin/comment.php:203
 msgid "<a href=\"%1$s\">%2$s at %3$s</a>"
 msgstr "<a href=\"%1$s\">%2$s в %3$s</a>"
+
+#: wp-admin/comment.php:199
+msgid "Submitted on"
+msgstr "Отправлен"
 
 #: wp-admin/comment.php:193
 #: wp-admin/includes/class-wp-comments-list-table.php:424
@@ -10379,10 +10379,6 @@ msgstr "Назад"
 msgid "Oops, no comment with this ID."
 msgstr "Оп-па, комментария с таким ID не найдено."
 
-#: wp-admin/comment.php:59 wp-admin/edit-comments.php:133
-msgid "<a href=\"https://codex.wordpress.org/Administration_Screens#Comments\" target=\"_blank\">Documentation on Comments</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Administration_Screens#Comments\" target=\"_blank\">Документация по комментариям</a>"
-
 #: wp-admin/comment.php:60 wp-admin/custom-background.php:97
 #: wp-admin/custom-header.php:124 wp-admin/edit-comments.php:136
 #: wp-admin/edit-form-advanced.php:313 wp-admin/edit-form-advanced.php:329
@@ -10402,6 +10398,10 @@ msgstr "<a href=\"https://codex.wordpress.org/Administration_Screens#Comments\" 
 #: wp-admin/user-new.php:184 wp-admin/users.php:63 wp-admin/widgets.php:74
 msgid "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"https://ru.forums.wordpress.org/\" target=\"_blank\">Форумы поддержки</a>"
+
+#: wp-admin/comment.php:59 wp-admin/edit-comments.php:133
+msgid "<a href=\"https://codex.wordpress.org/Administration_Screens#Comments\" target=\"_blank\">Documentation on Comments</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Administration_Screens#Comments\" target=\"_blank\">Документация по комментариям</a>"
 
 #: wp-admin/comment.php:58 wp-admin/custom-background.php:95
 #: wp-admin/custom-header.php:122 wp-admin/edit-comments.php:132
@@ -10509,7 +10509,7 @@ msgstr "Спасибо вам за творчество с <a href=\"%s\">WordPr
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:171
+#: wp-admin/about.php:175
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "В <strong>версии %1$s</strong> решена проблема с безопасностью и исправлена %2$s ошибка."
@@ -10517,163 +10517,164 @@ msgstr[1] "В <strong>версии %1$s</strong> решена проблема �
 msgstr[2] "В <strong>версии %1$s</strong> решена проблема с безопасностью и исправлены %2$s ошибок."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:167
+#: wp-admin/about.php:171
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "В <strong>версии %1$s</strong> исправлена %2$s ошибка."
 msgstr[1] "В <strong>версии %1$s</strong> исправлены %2$s ошибки."
 msgstr[2] "В <strong>версии %1$s</strong> исправлены %2$s ошибок."
 
-#: wp-admin/about.php:159
+#: wp-admin/about.php:163
 msgid "Security Release"
 msgid_plural "Security Releases"
 msgstr[0] "Обновление безопасности"
 msgstr[1] "Обновления безопасности"
 msgstr[2] "Обновления безопасности"
 
-#: wp-admin/about.php:158
+#: wp-admin/about.php:162
 msgid "Maintenance Release"
 msgid_plural "Maintenance Releases"
 msgstr[0] "Техническое обновление"
 msgstr[1] "Технические обновления"
 msgstr[2] "Технические обновления"
 
-#: wp-admin/about.php:146
+#: wp-admin/about.php:150
 msgid "Go to Dashboard"
 msgstr "Перейти на страницу &laquo;Консоль&raquo;"
 
-#: wp-admin/about.php:146
+#: wp-admin/about.php:150
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Перейти на страницу &laquo;Консоль&raquo; &rarr; &laquo;Главная&raquo;"
 
-#: wp-admin/about.php:142
+#: wp-admin/about.php:146
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Вернуться на страницу &laquo;Консоль&raquo; &rarr; &laquo;Обновления&raquo;"
 
-#: wp-admin/about.php:142
+#: wp-admin/about.php:146
 msgid "Return to Updates"
 msgstr "Вернуться на страницу &laquo;Обновления&raquo;"
 
-#: wp-admin/about.php:130
-msgid "Complex query ordering"
-msgstr "Сложная сортировка запросов"
-
 #. translators: 1: WP_Query, 2: WP_Comment_Query, 3: WP_User_Query
-#: wp-admin/about.php:133
+#: wp-admin/about.php:137
 msgid "%1$s, %2$s, and %3$s now support complex ordering with named meta query clauses."
 msgstr "Классы %1$s, %2$s, and %3$s теперь поддерживают сложную сортировку с использованием именованных условий для запроса метаданных."
 
-#: wp-admin/about.php:124
-msgid "Shared term splitting"
-msgstr "Разделение связанных элементов"
+#: wp-admin/about.php:134
+msgid "Complex query ordering"
+msgstr "Сложная сортировка запросов"
 
 #. translators: 1: Term splitting guide link
-#: wp-admin/about.php:127
+#: wp-admin/about.php:131
 msgid "Terms shared across multiple taxonomies will be split when one of them is updated. Find out more in the <a href=\"%1$s\">Plugin Developer Handbook</a>."
 msgstr "Связанные элементы из разных таксономий при обновлении одного из них будут разделены. См. <a href=\"%1$s\">справочник разработчика плагинов</a>."
 
-#: wp-admin/about.php:117
-msgid "JavaScript accessibility"
-msgstr "JavaScript и специальные возможности"
+#: wp-admin/about.php:128
+msgid "Shared term splitting"
+msgstr "Разделение связанных элементов"
 
 #. translators: %s wp.a11y.speak()
-#: wp-admin/about.php:120
+#: wp-admin/about.php:124
 msgid "You can now send audible notifications to screen readers in JavaScript with %s. Pass it a string, and an update will be sent to a dedicated ARIA live notifications area."
 msgstr "Можно посылать программам чтения с экрана звуковые оповещения из JavaScript с помощью функции %s. Передайте ей строку, и она будет отправлена в соответствующую область ARIA."
 
-#: wp-admin/about.php:114
-msgid "utf8mb4 support"
-msgstr "Поддержка utf8mb4"
+#: wp-admin/about.php:121
+msgid "JavaScript accessibility"
+msgstr "JavaScript и специальные возможности"
 
-#: wp-admin/about.php:115
+#: wp-admin/about.php:119
 msgid "Database character encoding has changed from utf8 to utf8mb4, which adds support for a whole range of new 4-byte characters."
 msgstr "Кодировка базы данных изменилась с utf8 на utf8mb4, что позволило добавить поддержку целого ряда символов, занимающих 4 байта."
 
-#: wp-admin/about.php:110
+#: wp-admin/about.php:118
+msgid "utf8mb4 support"
+msgstr "Поддержка utf8mb4"
+
+#: wp-admin/about.php:114
 msgid "Under the Hood"
 msgstr "Под капотом"
 
-#: wp-admin/about.php:105
+#: wp-admin/about.php:109
 msgid "Goodbye boring loading screen, hello smooth and simple plugin updates. Click <em>Update&nbsp;Now</em> and watch the magic happen."
 msgstr "Прощай, унылый экран загрузки. Привет, простые и быстрые обновления плагинов! Нажмите <em>&laquo;Обновить&nbsp;сейчас&raquo;</em> и наблюдайте, как происходит чудо."
 
-#: wp-admin/about.php:99
-msgid "Even more embeds"
-msgstr "Вставка объектов"
-
-#: wp-admin/about.php:100
-msgid "Paste links from Tumblr.com and Kickstarter and watch them magically appear right in the editor. With every release, your publishing and editing experience get closer together."
-msgstr "Вставьте ссылку с Tumblr или Kickstarter, и связанный объект моментально появится в редакторе. С каждой версией создание записей становится всё более гладким."
-
-#: wp-admin/about.php:104
+#: wp-admin/about.php:108
 msgid "Streamlined plugin updates"
 msgstr "Быстрое обновление плагинов"
 
-#: wp-admin/about.php:94
-msgid "Switch themes in the Customizer"
-msgstr "Смена тем в окне настройки"
+#: wp-admin/about.php:104
+msgid "Paste links from Tumblr.com and Kickstarter and watch them magically appear right in the editor. With every release, your publishing and editing experience get closer together."
+msgstr "Вставьте ссылку с Tumblr или Kickstarter, и связанный объект моментально появится в редакторе. С каждой версией создание записей становится всё более гладким."
 
-#: wp-admin/about.php:95
+#: wp-admin/about.php:103
+msgid "Even more embeds"
+msgstr "Вставка объектов"
+
+#: wp-admin/about.php:99
 msgid "Browse and preview your installed themes from the Customizer. Make sure the theme looks great with <em>your</em> content, before it debuts on your site. "
 msgstr "Просматривайте и переключайте темы из окна настройки. Убедитесь, что новая тема замечательно выглядит с <em>вашими</em> записями, прежде чем она появится на сайте."
 
-#: wp-admin/about.php:86
+#: wp-admin/about.php:98
+msgid "Switch themes in the Customizer"
+msgstr "Смена тем в окне настройки"
+
+#: wp-admin/about.php:90
 msgid "https://codex.wordpress.org/Emoji"
 msgstr "https://codex.wordpress.org/Emoji"
 
-#: wp-admin/about.php:83
-msgid "Writing in WordPress, whatever your language, just got better. WordPress 4.2 supports a host of new characters out-of-the-box, including native Chinese, Japanese, and Korean characters, musical and mathematical symbols, and hieroglyphs."
-msgstr "Писать с помощью WordPress стало проще, каким бы ни был ваш язык. WordPress 4.2 поддерживает множество новых символов, включая символы китайского, японского и корейского алфавитов, музыкальные и математические символы, а также иероглифы."
-
 #. translators: 1: heart emoji, 2: frog face emoji, 3, monkey emoji, 4: pizza
 #. emoji, 5: Emoji Codex link
-#: wp-admin/about.php:86
+#: wp-admin/about.php:90
 msgid "Don&#8217;t use any of those characters? You can still have fun &mdash; emoji are now available in WordPress! Get creative and decorate your content with %1$s, %2$s, %3$s, %4$s, and all the many other <a href=\"%5$s\">emoji</a>."
 msgstr "Даже если вы не используете эти символы, для вас всё равно есть приятный сюрприз &mdash; в WordPress теперь можно вставлять эмодзи! Проявите фантазию и украсьте свои записи %1$s, %2$s, %3$s, %4$s и большим количеством других <a href=\"%5$s\">эмодзи</a>."
 
-#: wp-admin/about.php:82
+#: wp-admin/about.php:87
+msgid "Writing in WordPress, whatever your language, just got better. WordPress 4.2 supports a host of new characters out-of-the-box, including native Chinese, Japanese, and Korean characters, musical and mathematical symbols, and hieroglyphs."
+msgstr "Писать с помощью WordPress стало проще, каким бы ни был ваш язык. WordPress 4.2 поддерживает множество новых символов, включая символы китайского, японского и корейского алфавитов, музыкальные и математические символы, а также иероглифы."
+
+#: wp-admin/about.php:86
 msgid "Extended character support"
 msgstr "Расширенная поддержка символов"
 
-#: wp-admin/about.php:68 wp-admin/tools.php:16 wp-admin/tools.php:40
+#: wp-admin/about.php:72 wp-admin/tools.php:16 wp-admin/tools.php:40
 #: wp-admin/tools.php:51
 msgid "Press This"
 msgstr "Опубликовать"
 
-#: wp-admin/about.php:64
-msgid "Clip it, edit it, publish it. Get familiar with the new and improved Press This. From the <a href=\"%s\">Tools</a> menu, add Press This to your browser bookmark bar or your mobile device home screen. Once installed you can share your content with lightning speed. Sharing your favorite videos, images, and content has never been this fast or this easy."
-msgstr "Копируйте, правьте, публикуйте. Представляем новую закладку &laquo;Опубликовать&raquo;. Добавьте её в избранное или на экран телефона из меню <a href=\"%s\">&laquo;Инструменты&raquo;</a>, и вы сможете делиться материалами с молниеносной скоростью. Обмен любимыми роликами, картинками и записями никогда ещё  не был столь быстрым и простым."
-
-#: wp-admin/about.php:65 wp-admin/tools.php:48
+#: wp-admin/about.php:69 wp-admin/tools.php:48
 msgid "Drag the bookmarklet below to your bookmarks bar. Then, when you&#8217;re on a page you want to share, simply &#8220;press&#8221; it."
 msgstr "Перетащите размещённую ниже закладку на панель избранного. Затем, перейдя на страницу, которой вы хотите поделиться, просто нажмите &laquo;Опубликовать&raquo;."
 
-#: wp-admin/about.php:63
+#: wp-admin/about.php:68
+msgid "Clip it, edit it, publish it. Get familiar with the new and improved Press This. From the <a href=\"%s\">Tools</a> menu, add Press This to your browser bookmark bar or your mobile device home screen. Once installed you can share your content with lightning speed. Sharing your favorite videos, images, and content has never been this fast or this easy."
+msgstr "Копируйте, правьте, публикуйте. Представляем новую закладку &laquo;Опубликовать&raquo;. Добавьте её в избранное или на экран телефона из меню <a href=\"%s\">&laquo;Инструменты&raquo;</a>, и вы сможете делиться материалами с молниеносной скоростью. Обмен любимыми роликами, картинками и записями никогда ещё  не был столь быстрым и простым."
+
+#: wp-admin/about.php:67
 msgid "An easier way to share content"
 msgstr "Лёгкий способ делиться материалами"
 
 #. translators: 1: WordPress version number.
-#: wp-admin/about.php:49 wp-admin/about.php:163
+#: wp-admin/about.php:53 wp-admin/about.php:167
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[0] "В <strong>версии %1$s</strong> решена проблема с безопасностью."
 msgstr[1] "В <strong>версии %1$s</strong> решены несколько проблем с безопасностью."
 msgstr[2] "В <strong>версии %1$s</strong> решены несколько проблем с безопасностью."
 
-#: wp-admin/about.php:47 wp-admin/about.php:51 wp-admin/about.php:178
+#: wp-admin/about.php:47 wp-admin/about.php:51 wp-admin/about.php:55
+#: wp-admin/about.php:182
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Дополнительную информацию можно найти в <a href=\"%s\">заметке о релизе</a>."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:45 wp-admin/about.php:175
+#: wp-admin/about.php:45 wp-admin/about.php:49 wp-admin/about.php:179
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "В <strong>версии %1$s</strong> решены несколько проблем с безопасностью и исправлена %2$s ошибка."
 msgstr[1] "В <strong>версии %1$s</strong> решены несколько проблем с безопасностью и исправлены %2$s ошибки."
 msgstr[2] "В <strong>версии %1$s</strong> решены несколько проблем с безопасностью и исправлены %2$s ошибок."
 
-#: wp-admin/about.php:44 wp-admin/about.php:160
+#: wp-admin/about.php:44 wp-admin/about.php:164
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "Техническое обновление безопасности"

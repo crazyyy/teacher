@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lesson 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>News headliner</p>
+  <ul data-bind="template: { name: 'news-template', foreach: news}">
+
+  </ul>
+
+  <script type="text/html" id="news-template">
+    <li>
+      <!-- ko if: isNew -->
+        <span class="new-label">New!</span>
+      <!-- /ko -->
+      <h1 data-bind="text: title"></h1>
+      <p data-bind="text: text"></p>
+    </li>
+  </script>
+
+  <script src="lib/knockout.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 class Task {
   constructor(title = '') {
     this.title = title,
-    this.done = false,
-    console.log(`Create task ${this.title} `)
+      this.done = false,
+      console.log(`Create task ${this.title} `)
   }
 
   complete() {

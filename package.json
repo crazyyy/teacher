@@ -5,7 +5,7 @@
     "css-mqpacker": "^3.1.0",
     "csswring": "^3.0.5",
     "event-stream": "^3.3.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-cache": "^0.2.8",
     "gulp-combine-media-queries": "^0.2.0",
@@ -33,5 +33,7 @@
     "jshint-stylish": "^1.0.1",
     "run-sequence": "^1.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }

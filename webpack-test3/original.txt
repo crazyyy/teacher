@@ -1,0 +1,1 @@
+https://github.com/studionone/webpack-es6-cssnext-boilerplate
